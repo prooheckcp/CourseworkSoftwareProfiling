@@ -42,7 +42,7 @@ public class InputManager {
     }
 
     private static boolean isValidOption(int index){
-        return (index < 0 && index < MENU_ACTIONS.length + 1);
+        return (index > 0 && index < MENU_ACTIONS.length + 1);
     }
 
     static void MainWindow(){
@@ -51,7 +51,7 @@ public class InputManager {
         Integer userSelectedOption = parseOption(scanner.nextLine());
 
         if(!isValidOption(userSelectedOption)){
-            Util.print("Error: Selected option is not valid!");
+            Util.print("Error: Selected option is not valid!\n");
             return;
         }
 
