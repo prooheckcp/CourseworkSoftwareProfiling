@@ -10,14 +10,31 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
 
-public class data {
+public class Data {
+    public static final Map<AuthenticationMethod, Authentication> AuthenticationList = new HashMap<>();
 
     public static final String INITIAL_MESSAGE =
             "Welcome to the IT " +
             "services of the University of Bradford!\n" +
             "What do you wish to do?\n\n";
 
+    public static Options mainWindowOptions = new Options(new MenuAction[]{
+            new RegisterUser("Register"),
+            new LoginUser("Log-in")
+    });
+
+    public static Options profileWindowOptions = new Options(new MenuAction[]{
+        new CheckAccountDetails("Show account details"),
+        new ChangeAuthenticationMethod("Change authentication method"),
+        new Logout("Log-out")
+    });
+
     private static Vector<User> userList = new Vector<User>();
+
+    public static void populateAuthenticationList(){
+        AuthenticationList.put(AuthenticationMethod.PASSWORD, new PasswordAuthentication());
+        AuthenticationList.put(AuthenticationMethod.TWO_FACTOR, new TwoFactorAuthentication());
+    }
 
     public static void declareTestUsers(){
         //Random basic admin account for testing purposes

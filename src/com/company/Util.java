@@ -15,7 +15,7 @@ public class Util {
 
     public static Boolean retryPrompt(){
         Util.print("Press 1 to retry or any other key to go back");
-        return (InputManager.parseOption(Util.getLine()) != 1);
+        return (Options.parseOption(Util.getLine()) != 1);
     }
 
     public static void printDivision(){

@@ -6,7 +6,12 @@ public class LoginUser extends MenuAction {
     }
 
     public static void loginAttempt(User user){
+        if(Data.AuthenticationList.containsKey(user.authenticationMethod)){
+            if(!Data.AuthenticationList.get(user.authenticationMethod).loginAttempt(user, ""))
+                return;
+        }
 
+        Profile.login(user);
     }
 
     public Boolean Main(){
@@ -16,7 +21,7 @@ public class LoginUser extends MenuAction {
         Util.printInLine("Password: ");
         String insertedPassword = Util.getLine();
 
-        Tuple<Boolean, User> getUserResult = data.getUser(insertedUsername);
+        Tuple<Boolean, User> getUserResult = Data.getUser(insertedUsername);
         if(!getUserResult.getValue1()){
             Util.print("Couldn't find any user by the name of: " + insertedUsername);
             return Util.retryPrompt();
@@ -31,6 +36,6 @@ public class LoginUser extends MenuAction {
 
         loginAttempt(getUserResult.getValue2());
 
-        return true;
+        return false;
     }
 }
