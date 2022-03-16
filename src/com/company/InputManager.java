@@ -46,9 +46,8 @@ public class InputManager {
     }
 
     static void MainWindow(){
-        Scanner scanner = new Scanner(System.in);
         Util.print(INITIAL_MESSAGE + GetOptionsList());
-        Integer userSelectedOption = parseOption(scanner.nextLine());
+        Integer userSelectedOption = parseOption(Util.getLine());
 
         if(!isValidOption(userSelectedOption)){
             Util.print("Error: Selected option is not valid!\n");
