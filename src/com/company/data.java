@@ -24,6 +24,10 @@ public class data {
         userList.add(new User("prooheckcp", "password", Privilege.ADMIN));
     }
 
+    public static Tuple<Boolean, String> userExists(){
+        //TO-DO
+    }
+
     public static Tuple<Boolean, String> createUser(String username, String password){
         username = username.strip();
 

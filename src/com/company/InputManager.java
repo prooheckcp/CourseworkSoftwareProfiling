@@ -14,11 +14,6 @@ public class InputManager {
         new LoginUser("Log-in")
     };
 
-    static final private String INITIAL_MESSAGE =
-    "Welcome to the IT" +
-    " services of the University of Bradford!\n" +
-    "What do you wish to do?\n\n";
-
     private static String GetOptionsList(){
         String result = "";
 
