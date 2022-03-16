@@ -7,6 +7,7 @@ to the given user to select from
 
 public class Options {
     MenuAction[] menuActions;
+    String menuName;
 
     public static Integer parseOption(String option){
         try{
@@ -35,20 +36,22 @@ public class Options {
     }
 
     public void promptOptions(){
+        Util.print(menuName + ":");
         Util.print(getOptionsList());
         Integer userSelectedOption = parseOption(Util.getLine());
         if(!isValidOption(userSelectedOption)){
             Util.print("Error: Selected option is not valid!\n");
+            promptOptions();
             return;
         }
         MenuAction menuAction = menuActions[userSelectedOption - 1];
-        while(true){
-            if (menuAction.Main())
-                break;
-        }
+
+        if (menuAction.Main())
+            promptOptions();
     }
 
-    Options(MenuAction[] menuActions){
+    Options(String menuName, MenuAction[] menuActions){
+        this.menuName = menuName;
         this.menuActions = menuActions;
     }
 

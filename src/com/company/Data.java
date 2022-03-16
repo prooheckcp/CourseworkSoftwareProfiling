@@ -13,17 +13,27 @@ import java.util.Vector;
 public class Data {
     public static final Map<AuthenticationMethod, Authentication> AuthenticationList = new HashMap<>();
 
+    public static Map<Privilege, String> privilegeStrings = new HashMap<>(){{
+        put(Privilege.GUEST, "Guest");
+        put(Privilege.ADMIN, "Admin");
+    }};
+
+    public static Map<AuthenticationMethod, String> authenticationStrings = new HashMap<>(){{
+        put(AuthenticationMethod.NONE, "None");
+        put(AuthenticationMethod.TWO_FACTOR, "2FA");
+    }};
+
     public static final String INITIAL_MESSAGE =
             "Welcome to the IT " +
             "services of the University of Bradford!\n" +
-            "What do you wish to do?\n\n";
+            "What do you wish to do?\n";
 
-    public static Options mainWindowOptions = new Options(new MenuAction[]{
+    public static Options mainWindowOptions = new Options("Main window", new MenuAction[]{
             new RegisterUser("Register"),
             new LoginUser("Log-in")
     });
 
-    public static Options profileWindowOptions = new Options(new MenuAction[]{
+    public static Options profileWindowOptions = new Options("Profile options", new MenuAction[]{
         new CheckAccountDetails("Show account details"),
         new ChangeAuthenticationMethod("Change authentication method"),
         new Logout("Log-out")

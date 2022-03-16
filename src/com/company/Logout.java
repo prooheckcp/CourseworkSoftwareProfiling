@@ -7,6 +7,6 @@ public class Logout extends MenuAction {
 
     public Boolean Main(){
         //Log out user
-        return false;
+        return true;
     };
 }

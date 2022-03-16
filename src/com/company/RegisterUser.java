@@ -15,7 +15,10 @@ public class RegisterUser extends MenuAction{
         Tuple<Boolean, String> creationResult = Data.createUser(insertedUsername, insertedPassword);
         if(!creationResult.getValue1()){
             Util.print(creationResult.getValue2());
-            return Util.retryPrompt();
+            if(Util.retryPrompt())
+                Main();
+
+            return false;
         }
 
         Util.print("Account created!");

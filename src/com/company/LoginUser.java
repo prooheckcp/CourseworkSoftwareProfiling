@@ -24,18 +24,23 @@ public class LoginUser extends MenuAction {
         Tuple<Boolean, User> getUserResult = Data.getUser(insertedUsername);
         if(!getUserResult.getValue1()){
             Util.print("Couldn't find any user by the name of: " + insertedUsername);
-            return Util.retryPrompt();
+            if(Util.retryPrompt())
+                Main();
         }
 
         //First authentication step
         Boolean passedFirstGate = PasswordAuthentication.loginAttempt(getUserResult.getValue2(), insertedPassword);
         if(!passedFirstGate){
             Util.print("Incorrect password!");
-            return Util.retryPrompt();
+
+            if(Util.retryPrompt())
+                Main();
+
+            return true;
         }
 
         loginAttempt(getUserResult.getValue2());
 
-        return false;
+        return true;
     }
 }

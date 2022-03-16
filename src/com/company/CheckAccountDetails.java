@@ -6,7 +6,14 @@ public class CheckAccountDetails extends MenuAction {
     }
 
     public Boolean Main(){
-        //Print account details
-        return false;
+        User user = Profile.currentUser;
+        Util.print("||Account details||");
+        Util.print("Username: " + user.username);
+        Util.print("Email: " + user.email);
+        Util.print("Phone number: " + user.phoneNumber);
+        Util.print("Privilege: " + Data.privilegeStrings.get(user.privilege));
+        Util.print("Authentication Method: " + Data.authenticationStrings.get(user.authenticationMethod));
+
+        return true;
     };
 }
