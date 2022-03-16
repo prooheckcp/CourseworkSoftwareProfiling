@@ -46,7 +46,7 @@ public class InputManager {
     }
 
     static void MainWindow(){
-        Util.print(INITIAL_MESSAGE + GetOptionsList());
+        Util.print(GetOptionsList());
         Integer userSelectedOption = parseOption(Util.getLine());
 
         if(!isValidOption(userSelectedOption)){
@@ -55,6 +55,10 @@ public class InputManager {
         }
 
         MenuAction menuAction = MENU_ACTIONS[userSelectedOption - 1];
-        menuAction.Main();
+
+        while(true){
+            if (menuAction.Main())
+                break;
+        }
     }
 }
