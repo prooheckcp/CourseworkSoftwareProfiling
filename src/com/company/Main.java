@@ -6,14 +6,9 @@ public class Main {
         Data.declareTestUsers();
         Data.populateAuthenticationList();
 
-        Options mainWindowOptions = new Options(new MenuAction[]{
-                new RegisterUser("Register"),
-                new LoginUser("Log-in")
-        });
-
         Util.print(Data.INITIAL_MESSAGE);
         while(true) {
-            mainWindowOptions.promptOptions();
+            Data.mainWindowOptions.promptOptions();
         }
     }
 }
