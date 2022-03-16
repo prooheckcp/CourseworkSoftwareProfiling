@@ -22,6 +22,13 @@ public class User {
         this.authenticationMethod = AuthenticationMethod.NONE;
     }
 
+    public User(String username, String password, Privilege privilege, AuthenticationMethod authenticationMethod){
+        this.username = username;
+        this.password = password;
+        this.privilege = privilege;
+        this.authenticationMethod = authenticationMethod;
+    }
+
     public boolean setPhoneNumber(String newPhoneNumber){
         return false;
     }

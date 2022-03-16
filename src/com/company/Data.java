@@ -3,7 +3,8 @@ package com.company;
 /*
 Since we won't be using any sort of databases
 or storing files we'll instead use this place
-to save data related to the program
+to save data related to the program and other static data
+such as option lists
 */
 
 import java.util.HashMap;
@@ -48,7 +49,12 @@ public class Data {
 
     public static void declareTestUsers(){
         //Random basic admin account for testing purposes
-        userList.add(new User("prooheckcp", "password", Privilege.ADMIN));
+        userList.add(new User(
+                "prooheckcp",
+                "password",
+                Privilege.ADMIN,
+                AuthenticationMethod.TWO_FACTOR
+        ));
     }
 
     public static Tuple<Boolean, User> getUser(String username){

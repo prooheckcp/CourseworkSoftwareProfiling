@@ -12,7 +12,7 @@ public class CheckAccountDetails extends MenuAction {
         Util.print("Email: " + user.email);
         Util.print("Phone number: " + user.phoneNumber);
         Util.print("Privilege: " + Data.privilegeStrings.get(user.privilege));
-        Util.print("Authentication Method: " + Data.authenticationStrings.get(user.authenticationMethod));
+        Util.print("Authentication Method: " + Data.authenticationStrings.get(user.authenticationMethod) + "\n");
 
         return true;
     };

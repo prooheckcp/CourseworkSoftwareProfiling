@@ -29,10 +29,9 @@ public class LoginUser extends MenuAction {
         }
 
         //First authentication step
-        Boolean passedFirstGate = PasswordAuthentication.loginAttempt(getUserResult.getValue2(), insertedPassword);
+        Boolean passedFirstGate =  Data.AuthenticationList.get(AuthenticationMethod.PASSWORD).loginAttempt(getUserResult.getValue2(), insertedPassword);
         if(!passedFirstGate){
             Util.print("Incorrect password!");
-
             if(Util.retryPrompt())
                 Main();
 
