@@ -13,6 +13,11 @@ public class Util {
         return scanner.nextLine();
     }
 
+    public static Boolean retryPrompt(){
+        Util.print("Press 1 to retry or any other key to go back");
+        return (InputManager.parseOption(Util.getLine()) != 1);
+    }
+
     public static void printDivision(){
         print("||||||||||||||||||||||||");
     }

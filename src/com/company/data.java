@@ -24,8 +24,14 @@ public class data {
         userList.add(new User("prooheckcp", "password", Privilege.ADMIN));
     }
 
-    public static Tuple<Boolean, String> userExists(){
-        //TO-DO
+    public static Tuple<Boolean, User> getUser(String username){
+        for(int index = 0; index < userList.size(); index++){
+            User user = userList.get(index);
+
+            if(user.username.strip().equals(username))
+                return new Tuple(true, user);
+        }
+        return new Tuple(false, null);
     }
 
     public static Tuple<Boolean, String> createUser(String username, String password){
@@ -37,7 +43,7 @@ public class data {
             }
         }
 
-        userList.add(new User(username, password));
+        userList.add(new User(username.strip(), password));
 
         return new Tuple<>(true, "");
     }
