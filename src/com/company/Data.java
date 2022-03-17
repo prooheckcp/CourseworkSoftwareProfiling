@@ -22,7 +22,14 @@ public class Data {
     public static Map<AuthenticationMethod, String> authenticationStrings = new HashMap<>(){{
         put(AuthenticationMethod.NONE, "None");
         put(AuthenticationMethod.TWO_FACTOR, "2FA");
+        put(AuthenticationMethod.EMAIL, "Email");
     }};
+
+    public static Options profileWindowOptions = new Options("Profile options", new MenuAction[]{
+            new CheckAccountDetails("Show account details"),
+            new ChangeAuthenticationMethod("Change authentication method"),
+            new Logout("Log-out")
+    });
 
     public static final String INITIAL_MESSAGE =
             "Welcome to the IT " +
@@ -34,17 +41,12 @@ public class Data {
             new LoginUser("Log-in")
     });
 
-    public static Options profileWindowOptions = new Options("Profile options", new MenuAction[]{
-        new CheckAccountDetails("Show account details"),
-        new ChangeAuthenticationMethod("Change authentication method"),
-        new Logout("Log-out")
-    });
-
     private static Vector<User> userList = new Vector<User>();
 
     public static void populateAuthenticationList(){
         AuthenticationList.put(AuthenticationMethod.PASSWORD, new PasswordAuthentication());
         AuthenticationList.put(AuthenticationMethod.TWO_FACTOR, new TwoFactorAuthentication());
+        AuthenticationList.put(AuthenticationMethod.EMAIL, new EmailAuthentication());
     }
 
     public static void declareTestUsers(){
@@ -53,7 +55,7 @@ public class Data {
                 "prooheckcp",
                 "password",
                 Privilege.ADMIN,
-                AuthenticationMethod.TWO_FACTOR
+                AuthenticationMethod.EMAIL
         ));
     }
 
