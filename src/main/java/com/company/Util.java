@@ -10,7 +10,9 @@ public class Util {
     private static Scanner scanner = new Scanner(System.in);
 
     public static String getLine(){
-        return scanner.nextLine();
+        if(scanner.hasNextLine())
+            return scanner.nextLine();
+        return "";
     }
 
     public static Boolean retryPrompt(){

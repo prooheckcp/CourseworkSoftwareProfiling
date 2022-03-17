@@ -2,7 +2,41 @@ package com.company;
 
 /*
 This class prompts an X amount of options
-to the given user to select from
+to the given user to select from which will
+play a custom method
+
+    Static Methods:
+        parseOption
+            Description: Given a string that should represent user input,
+            convert this string into an integer. E.g "3" -> 3
+
+            Arguments:
+                option : String -> String to be parsed
+
+            Return:
+                Integer -> Option in integer format
+
+    Public Methods:
+        promptOptions
+            Description: Displays the actions to the user and awaits for user input.
+
+    Private Methods:
+        isValidOption
+            Description: Given an integer option this method should return true if it
+            is a valid option to be selected or false if it isn't.
+
+            Arguments:
+                index : Integer -> Option index
+
+            Return:
+                Boolean -> Whether it is a valid option or not
+
+        getOptionsList
+            Description: Returns a pretty string with all the options
+            that the user can select.
+
+            Return:
+                String -> Cleaned string with options.
 */
 
 public class Options {
