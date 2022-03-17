@@ -35,6 +35,12 @@ public class EmailAuthentication extends Authentication{
         Util.printInLine("Code: ");
         String insertedCode = Util.getLine();
 
-        return insertedCode.strip().equals(generatedCode);
+
+        Boolean correctCode =  insertedCode.strip().equals(generatedCode);
+
+        if(!correctCode)
+            Util.print("Inserted code is incorrect!");
+
+        return correctCode;
     }
 }

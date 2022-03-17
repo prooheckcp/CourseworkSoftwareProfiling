@@ -30,6 +30,11 @@ public class TwoFactorAuthentication extends Authentication{
         Util.printInLine("Code: ");
         String insertedCode = Util.getLine();
 
-        return insertedCode.strip().equals(generatedCodeString);
+        Boolean correctCode = insertedCode.strip().equals(generatedCodeString);
+
+        if(!correctCode)
+            Util.print("Inserted code is incorrect!");
+
+        return correctCode;
     }
 }
