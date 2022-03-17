@@ -1,15 +1,15 @@
 package com.company;
-import java.util.Random;
+
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Random;
 
-public class TwoFactorAuthentication extends Authentication{
-
+public class EmailAuthentication implements Authentication{
     //Sends the code to a txt file
-    private void sendCode(Integer code){
+    private void sendCode(String code){
         try{
-            FileWriter myWriter = new FileWriter("MobileDeviceCode.txt");
-            myWriter.write("Your code: " + code.toString());
+            FileWriter myWriter = new FileWriter("EmailCode.txt");
+            myWriter.write("Your code: " + code);
             myWriter.close();
         }catch (IOException e) {
             System.out.println("An error occurred.");
@@ -17,20 +17,26 @@ public class TwoFactorAuthentication extends Authentication{
         }
     }
 
+    private char randomChar(){
+        Random rand = new Random();
+        return (char)rand.nextInt(65, 91);
+    }
+
     public boolean loginAttempt(User a, String b) {
         Random rand = new Random();
 
-        //Generate number between 0-999
-        Integer generatedCode = rand.nextInt(1000);
-        String generatedCodeString = generatedCode.toString();
+        //Generate a 3 number sequence
+        String generatedCode = "" + randomChar() + randomChar() + randomChar();
+
         sendCode(generatedCode);
 
-        Util.print("A code was sent to your mobile device!");
+        Util.print("A code was sent to your email!");
 
         Util.printInLine("Code: ");
         String insertedCode = Util.getLine();
 
-        Boolean correctCode = insertedCode.strip().equals(generatedCodeString);
+
+        Boolean correctCode =  insertedCode.strip().equals(generatedCode);
 
         if(!correctCode)
             Util.print("Inserted code is incorrect!");

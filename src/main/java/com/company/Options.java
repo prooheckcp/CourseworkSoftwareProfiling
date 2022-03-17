@@ -9,12 +9,32 @@ public class Options {
     MenuAction[] menuActions;
     String menuName;
 
+    Options(String menuName, MenuAction[] menuActions){
+        this.menuName = menuName;
+        this.menuActions = menuActions;
+    }
+
     public static Integer parseOption(String option){
         try{
             return Integer.parseInt(option);
         }catch (NumberFormatException e){
             return -1;
         }
+    }
+
+    public void promptOptions(){
+        Util.print(menuName + ":");
+        Util.print(getOptionsList());
+        Integer userSelectedOption = parseOption(Util.getLine());
+        if(!isValidOption(userSelectedOption)){
+            Util.print("Error: Selected option is not valid!\n");
+            promptOptions();
+            return;
+        }
+        MenuAction menuAction = menuActions[userSelectedOption - 1];
+
+        if (menuAction.Main())
+            promptOptions();
     }
 
     private Boolean isValidOption(Integer index){
@@ -34,26 +54,4 @@ public class Options {
         }
         return result;
     }
-
-    public void promptOptions(){
-        Util.print(menuName + ":");
-        Util.print(getOptionsList());
-        Integer userSelectedOption = parseOption(Util.getLine());
-        if(!isValidOption(userSelectedOption)){
-            Util.print("Error: Selected option is not valid!\n");
-            promptOptions();
-            return;
-        }
-        MenuAction menuAction = menuActions[userSelectedOption - 1];
-
-        if (menuAction.Main())
-            promptOptions();
-    }
-
-    Options(String menuName, MenuAction[] menuActions){
-        this.menuName = menuName;
-        this.menuActions = menuActions;
-    }
-
-
 }

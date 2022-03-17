@@ -2,7 +2,7 @@ package com.company;
 
 public class MenuAction {
 
-    String actionName = "N/A";
+    public String actionName = "N/A";
 
     public MenuAction(String actionName){
         this.actionName = actionName;
