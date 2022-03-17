@@ -8,7 +8,7 @@ public class Profile {
     public static void login(User user){
         currentUser = user;
 
-        Util.print("Welcome back, " + user.username + "!");
+        Util.print("Welcome back, " + user.getUsername() + "!");
         Util.print("What do you wish to do?\n");
         Data.profileWindowOptions.promptOptions();
     }

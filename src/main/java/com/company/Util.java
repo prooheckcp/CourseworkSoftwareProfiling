@@ -18,10 +18,6 @@ public class Util {
         return (Options.parseOption(Util.getLine()) == 1);
     }
 
-    public static void printDivision(){
-        print("||||||||||||||||||||||||");
-    }
-
     public static void printInLine(String message){
         System.out.print(message);
     }

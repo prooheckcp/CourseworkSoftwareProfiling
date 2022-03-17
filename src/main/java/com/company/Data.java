@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Vector;
 
 public class Data {
-    public static final Map<AuthenticationMethod, Authentication> AuthenticationList = new HashMap<>();
+    public static final Map<AuthenticationMethod, Authentication> authenticationList = new HashMap<>();
 
     public static Map<Privilege, String> privilegeStrings = new HashMap<>(){{
         put(Privilege.GUEST, "Guest");
@@ -32,22 +32,22 @@ public class Data {
             new Logout("Log-out")
     });
 
-    public static final String INITIAL_MESSAGE =
-            "Welcome to the IT " +
-            "services of the University of Bradford!\n" +
-            "What do you wish to do?\n";
-
     public static Options mainWindowOptions = new Options("Main window", new MenuAction[]{
             new RegisterUser("Register"),
             new LoginUser("Log-in")
     });
 
+    public static final String INITIAL_MESSAGE =
+            "Welcome to the IT " +
+            "services of the University of Bradford!\n" +
+            "What do you wish to do?\n";
+
     private static Vector<User> userList = new Vector<User>();
 
     public static void populateAuthenticationList(){
-        AuthenticationList.put(AuthenticationMethod.PASSWORD, new PasswordAuthentication());
-        AuthenticationList.put(AuthenticationMethod.TWO_FACTOR, new TwoFactorAuthentication());
-        AuthenticationList.put(AuthenticationMethod.EMAIL, new EmailAuthentication());
+        authenticationList.put(AuthenticationMethod.PASSWORD, new PasswordAuthentication());
+        authenticationList.put(AuthenticationMethod.TWO_FACTOR, new TwoFactorAuthentication());
+        authenticationList.put(AuthenticationMethod.EMAIL, new EmailAuthentication());
     }
 
     public static void declareTestUsers(){
@@ -64,7 +64,7 @@ public class Data {
         for(int index = 0; index < userList.size(); index++){
             User user = userList.get(index);
 
-            if(user.username.strip().equals(username))
+            if(user.getUsername().strip().equals(username))
                 return new Tuple(true, user);
         }
         return new Tuple(false, null);
@@ -74,7 +74,7 @@ public class Data {
         username = username.strip();
 
         for(int index = 0; index < userList.size(); index++){
-            if(userList.get(index).username.strip().equals(username)){
+            if(userList.get(index).getUsername().strip().equals(username)){
                 return new Tuple<>(false, "The username: " + username + " is already taken!");
             }
         }

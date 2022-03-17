@@ -16,7 +16,7 @@ public class ChangeAuthenticationMethod extends MenuAction {
         Map<Integer, AuthenticationMethod> temp = new HashMap<>();
 
         Util.print("Select authentication method:");
-        for(AuthenticationMethod key : Data.AuthenticationList.keySet()){
+        for(AuthenticationMethod key : Data.authenticationList.keySet()){
             index++;
             finalMessage += String.valueOf(index) + "." + Data.authenticationStrings.get(key) + "\n";
             temp.put(index, key);
@@ -35,9 +35,9 @@ public class ChangeAuthenticationMethod extends MenuAction {
 
         AuthenticationMethod selectedMethod = temp.get(filteredUserOption);
         if(selectedMethod == AuthenticationMethod.PASSWORD)
-            Profile.currentUser.authenticationMethod = AuthenticationMethod.NONE;
+            Profile.currentUser.setAuthenticationMethod(AuthenticationMethod.NONE);
         else
-            Profile.currentUser.authenticationMethod = selectedMethod;
+            Profile.currentUser.setAuthenticationMethod(selectedMethod);
 
         return true;
     };

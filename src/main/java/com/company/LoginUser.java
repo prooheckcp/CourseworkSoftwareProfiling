@@ -6,8 +6,8 @@ public class LoginUser extends MenuAction {
     }
 
     public static void loginAttempt(User user){
-        if(Data.AuthenticationList.containsKey(user.authenticationMethod)){
-            if(!Data.AuthenticationList.get(user.authenticationMethod).loginAttempt(user, ""))
+        if(Data.authenticationList.containsKey(user.getAuthenticationMethod())){
+            if(!Data.authenticationList.get(user.getAuthenticationMethod()).loginAttempt(user, ""))
                 return;
         }
 
@@ -29,7 +29,7 @@ public class LoginUser extends MenuAction {
         }
 
         //First authentication step
-        Boolean passedFirstGate =  Data.AuthenticationList.get(AuthenticationMethod.PASSWORD).loginAttempt(getUserResult.getValue2(), insertedPassword);
+        Boolean passedFirstGate =  Data.authenticationList.get(AuthenticationMethod.PASSWORD).loginAttempt(getUserResult.getValue2(), insertedPassword);
         if(!passedFirstGate){
             Util.print("Incorrect password!");
             if(Util.retryPrompt())
