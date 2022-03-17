@@ -21,6 +21,7 @@ public class Data {
 
     public static Map<AuthenticationMethod, String> authenticationStrings = new HashMap<>(){{
         put(AuthenticationMethod.NONE, "None");
+        put(AuthenticationMethod.PASSWORD, "Password");
         put(AuthenticationMethod.TWO_FACTOR, "2FA");
         put(AuthenticationMethod.EMAIL, "Email");
     }};
@@ -55,7 +56,7 @@ public class Data {
                 "prooheckcp",
                 "password",
                 Privilege.ADMIN,
-                AuthenticationMethod.EMAIL
+                AuthenticationMethod.NONE
         ));
     }
 
