@@ -1,5 +1,25 @@
 package com.company;
 
+/*
+This is one of the actions present in the main menu.
+It allows the user to get into his account.
+
+    Static methods:
+        loginAttempt
+            Description: Attempts to log in into a given user. Starts by checking
+            if this user has authentication methods and if yes it prompts them.
+
+            Arguments:
+                user : User -> User that you're attempting to log into
+
+    Public methods:
+        Main
+            Description: Option that gets called upon the selection of the "Log out" on the profile.
+
+            Return:
+                Boolean -> True if ready to leave this option. False if still not ready.
+*/
+
 public class LoginUser extends MenuAction {
     LoginUser(String actionName){
         super(actionName);
@@ -26,6 +46,8 @@ public class LoginUser extends MenuAction {
             Util.print("Couldn't find any user by the name of: " + insertedUsername);
             if(Util.retryPrompt())
                 Main();
+
+            return true;
         }
 
         //First authentication step

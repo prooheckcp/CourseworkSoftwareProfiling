@@ -1,5 +1,17 @@
 package com.company;
 
+/*
+This is one of the actions present in the main menu.
+It allows the user to create a new account into the system.
+
+    Public methods:
+        Main
+            Description: Option that gets called upon the selection of the "Register" on the profile.
+
+            Return:
+                Boolean -> True if ready to leave this option. False if still not ready.
+*/
+
 public class RegisterUser extends MenuAction{
     RegisterUser(String actionName){
         super(actionName);

@@ -5,18 +5,16 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 class OptionsTest {
-
     static Options mainWindowOptions;
 
     @BeforeAll
     static void startData(){
         mainWindowOptions = new Options("Main window", new MenuAction[]{
-                new RegisterUser("Option 1"),
-                new LoginUser("Option 2")
+            new RegisterUser("Option 1"),
+            new LoginUser("Option 2")
         });
     }
 
-    @Test
     @DisplayName("Attempt to break option parser")
     @ParameterizedTest
     @ValueSource(strings = {"3", "-3", "word", "haha", "2", "0"})
@@ -25,6 +23,7 @@ class OptionsTest {
         Assertions.assertNotNull(response);
     }
 
+    @DisplayName("Force an option prompt")
     @Test
     void promptOptions() {
         /*

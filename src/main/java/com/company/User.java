@@ -1,5 +1,56 @@
 package com.company;
 
+/*
+The user class is used to contain the information
+about the users within the pseudo-database
+
+    Public methods:
+        getPrivilege
+            Description: A getter for the user privilege
+
+            Returns:
+                Privilege -> User privilege
+
+        getAuthenticationMethod
+            Description: A getter for the user authentication method
+
+            Returns:
+                AuthenticationMethod -> User AuthenticationMethod
+
+        setAuthenticationMethod
+            Description: A setter for the user authentication method
+
+            Arguments:
+                authenticationMethod : AuthenticationMethod -> new authentication method
+
+            Returns:
+                Boolean -> Whether the authentication method was changed or not
+
+        getUsername
+            Description: A getter for the user username
+
+            Returns:
+                Privilege -> User privilege
+
+        getPassword
+            Description: A getter for the user password
+
+            Returns:
+                String -> User password
+
+        getPhoneNumber
+            Description: A getter for the user phone number
+
+            Returns:
+                String -> User phone number
+
+        getEmail
+            Description: A getter for the user email
+
+            Returns:
+                String -> User email
+*/
+
 public class User {
     private Privilege privilege;
     private AuthenticationMethod authenticationMethod;

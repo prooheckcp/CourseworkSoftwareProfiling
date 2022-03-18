@@ -2,6 +2,19 @@ package com.company;
 
 /*
 Implements a simple 2 dimensional tuple
+
+    Public methods
+        getValue1
+            Description: Gives you the first value of the tuple
+
+            Returns:
+                T -> Returns the first value of type T
+
+        getValue2
+            Description: Gives you the second value of the tuple
+
+            Returns:
+                T -> Returns the second value of type T
 */
 
 public class Tuple<V1, V2> {

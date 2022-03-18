@@ -3,6 +3,18 @@ package com.company;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+This is one of the actions present in the profile menu.
+It allows the user to change his current authentication method.
+
+    Public methods:
+        Main
+            Description: Option that gets called upon the selection of the "ChangeAuthenticationMenu" on the profile.
+
+            Return:
+                Boolean -> True if ready to leave this option. False if still not ready.
+*/
+
 public class ChangeAuthenticationMethod extends MenuAction {
     ChangeAuthenticationMethod(String actionName){
         super(actionName);
@@ -34,6 +46,10 @@ public class ChangeAuthenticationMethod extends MenuAction {
         }
 
         AuthenticationMethod selectedMethod = temp.get(filteredUserOption);
+
+        if(Profile.currentUser == null)
+            return false;
+
         if(selectedMethod == AuthenticationMethod.PASSWORD)
             Profile.currentUser.setAuthenticationMethod(AuthenticationMethod.NONE);
         else

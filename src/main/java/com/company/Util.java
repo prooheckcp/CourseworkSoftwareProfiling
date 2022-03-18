@@ -1,7 +1,34 @@
 package com.company;
 /*
 This class implements some utility methods that
-java does not have by default
+are essentially wrappers to already existing java
+methods.
+
+    Static Methods:
+        getLine
+            Description: Gets the next line of input given by the user.
+
+            Returns:
+                String -> Next line of input from the user
+
+        retryPrompt
+            Description: Asks if the user wants to retry or go back.
+            Pressing 1 will make it return true, everything else will make it false.
+
+            Returns:
+                Boolean -> If the user pressed 1 or not
+
+        printInLine
+            Description: Wrapper function for System.out.print
+
+            Arguments:
+                String message
+
+         print
+            Description: Wrapper function for System.out.println
+
+            Arguments:
+                String message
 */
 
 import java.util.Scanner;

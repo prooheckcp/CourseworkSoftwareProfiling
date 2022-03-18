@@ -5,6 +5,36 @@ Since we won't be using any sort of databases
 or storing files we'll instead use this place
 to save data related to the program and other static data
 such as option lists
+
+    Static methods:
+        populateAuthenticationList
+            Description: Populates the authentication list
+
+        declareTestUsers
+            Description: Sets some test users to the program.
+
+        getUser
+            Description: This method is used to find a user by his username
+            and retrieve it.
+
+            Arguments:
+                username : String -> The username of the user you want to find
+
+            Returns:
+                Tuple<Boolean, User> -> A tuple where the first argument is true if it
+                                        found the user and the second argument is the user.
+
+        createUser
+            Description: Creates a new user into the pseudo database.
+
+            Arguments:
+                username : String -> Username for the new user
+                password : String -> The password for the new account
+
+            Returns:
+                Tuple<Boolean, String> -> A tuple where the first argument is true if it
+                                          created a new user and the second argument a feedback
+                                          message for context in case it fails.
 */
 
 import java.util.HashMap;
@@ -52,12 +82,21 @@ public class Data {
 
     public static void declareTestUsers(){
         //Random basic admin account for testing purposes
-        userList.add(new User(
+        userList.add(
+                new User(
                 "prooheckcp",
                 "password",
                 Privilege.ADMIN,
-                AuthenticationMethod.NONE
-        ));
+                AuthenticationMethod.NONE)
+        );
+
+        userList.add(
+                new User(
+                        "proohec",
+                        "password",
+                        Privilege.ADMIN,
+                        AuthenticationMethod.EMAIL)
+        );
     }
 
     public static Tuple<Boolean, User> getUser(String username){
