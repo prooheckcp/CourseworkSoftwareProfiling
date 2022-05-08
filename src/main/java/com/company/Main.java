@@ -10,8 +10,11 @@ public class Main {
         Data.populateAuthenticationList();
 
         Util.print(Data.INITIAL_MESSAGE);
+
+        /*
         while(true) {
             Data.mainWindowOptions.promptOptions();
         }
+        */
     }
 }
