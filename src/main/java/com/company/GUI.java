@@ -13,7 +13,7 @@ with whatever panels you want.
 public class GUI {
 
     //Constants
-    Dimension MINIMUM_DIMENSION = new Dimension(500, 200);
+    Dimension MINIMUM_DIMENSION = new Dimension(500, 400);
     String APPLICATION_NAME = "University of Bradford | IT services";
 
     //Variables

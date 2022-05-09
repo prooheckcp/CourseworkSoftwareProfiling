@@ -32,7 +32,7 @@ public class windowsGUI extends GUI {
         setMainPanel(mainWindow.getMainContainer());
         setProfilePanel(profileWindow.getMainContainer());
         setAuthenticationPanel(authenticationWindow.getMainContainer());
-        
+
         setRegisterPanel(new WindowsRegister().getMainContainer());
 
         super.start();
