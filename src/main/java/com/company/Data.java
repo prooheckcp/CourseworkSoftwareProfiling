@@ -60,6 +60,8 @@ public class Data {
         put(AuthenticationMethod.EMAIL, "Email");
     }};
 
+    
+
     public static Options profileWindowOptions = new Options("Profile options", new MenuAction[]{
             new CheckAccountDetails("Show account details"),
             new ChangeAuthenticationMethod("Change authentication method"),
