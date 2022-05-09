@@ -51,6 +51,7 @@ public class Data {
 
     //Events names
     public static String PROFILE_UPDATE = "profileUpdateEvent";
+    public static String LOGGED_IN = "loggedInEvent";
 
     public static final OperatingSystem currentOperatingSystem = OperatingSystem.WINDOWS; //Hardcoded
     public static final Map<AuthenticationMethod, Authentication> authenticationList = new HashMap<>(){{

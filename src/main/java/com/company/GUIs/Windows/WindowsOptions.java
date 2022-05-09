@@ -34,6 +34,10 @@ public class WindowsOptions {
         return this.mainContainer;
     }
 
+    public void setDescription(String newDescription){
+        description.setText(newDescription);
+    }
+
     String test;
     public WindowsOptions(String menuName, String descriptionMessage, Vector<MenuAction> menuActions){
         mainTitle.setText(menuName);

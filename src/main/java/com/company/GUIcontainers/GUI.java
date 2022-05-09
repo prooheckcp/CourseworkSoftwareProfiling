@@ -180,6 +180,8 @@ public class GUI {
             return;
         }
 
+        EventManager.fireEvent(Data.LOGGED_IN);
+
         replacePanel(_profilePanel);
     }
 
@@ -192,6 +194,8 @@ public class GUI {
             JOptionPane.showMessageDialog(null, errorMessage);
             return;
         }
+
+        EventManager.fireEvent(Data.LOGGED_IN);
 
         replacePanel(_profilePanel);
     }

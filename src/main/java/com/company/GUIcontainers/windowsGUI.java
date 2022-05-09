@@ -28,7 +28,7 @@ public class windowsGUI extends GUI {
 
         WindowsOptions profileWindow = new WindowsOptions(
                 "Profile",
-                "Welcome to your account, what do you wish to do?",
+                "",
                 profileWindowActions
         );
 
@@ -82,6 +82,13 @@ public class windowsGUI extends GUI {
                 windowsAccountDetails.setupPrivilege(privilegeString);
                 windowsAccountDetails.setupPhoneNumber(phoneNumber);
                 windowsAccountDetails.setupAuthenticationMethod(authenticationMethodString);
+            }
+        });
+
+        EventManager.addListener(Data.LOGGED_IN, new Event(){
+            @Override
+            public void action() {
+                profileWindow.setDescription("Welcome back " + Profile.currentUser.getUsername() + "! What are you doing today?");
             }
         });
 
