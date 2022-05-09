@@ -20,7 +20,7 @@
           <text value="Account details"/>
         </properties>
       </component>
-      <component id="9ffb5" class="javax.swing.JLabel" binding="description">
+      <component id="9ffb5" class="javax.swing.JLabel" binding="usernameTitle">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -30,7 +30,7 @@
           <text value="Username:"/>
         </properties>
       </component>
-      <component id="71ce1" class="javax.swing.JLabel">
+      <component id="71ce1" class="javax.swing.JLabel" binding="username">
         <constraints>
           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -48,7 +48,7 @@
           <text value="Go Back"/>
         </properties>
       </component>
-      <component id="d9bb7" class="javax.swing.JLabel">
+      <component id="d9bb7" class="javax.swing.JLabel" binding="emailTitle">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -58,7 +58,7 @@
           <text value="Email:"/>
         </properties>
       </component>
-      <component id="3aeaa" class="javax.swing.JLabel">
+      <component id="3aeaa" class="javax.swing.JLabel" binding="phoneNumberTitle">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -68,7 +68,7 @@
           <text value="Phone Number:"/>
         </properties>
       </component>
-      <component id="4c090" class="javax.swing.JLabel">
+      <component id="4c090" class="javax.swing.JLabel" binding="privilegeTitle">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -78,7 +78,7 @@
           <text value="Privilege:"/>
         </properties>
       </component>
-      <component id="e7f5d" class="javax.swing.JLabel">
+      <component id="e7f5d" class="javax.swing.JLabel" binding="authenticationMethodTitle">
         <constraints>
           <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -88,7 +88,7 @@
           <text value="Authentication Method:"/>
         </properties>
       </component>
-      <component id="2f92f" class="javax.swing.JLabel">
+      <component id="2f92f" class="javax.swing.JLabel" binding="email">
         <constraints>
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -98,7 +98,7 @@
           <text value="N/A"/>
         </properties>
       </component>
-      <component id="83d7a" class="javax.swing.JLabel">
+      <component id="83d7a" class="javax.swing.JLabel" binding="phoneNumber">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -108,7 +108,7 @@
           <text value="N/A"/>
         </properties>
       </component>
-      <component id="1815a" class="javax.swing.JLabel">
+      <component id="1815a" class="javax.swing.JLabel" binding="privilege">
         <constraints>
           <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -118,7 +118,7 @@
           <text value="N/A"/>
         </properties>
       </component>
-      <component id="3e88c" class="javax.swing.JLabel">
+      <component id="3e88c" class="javax.swing.JLabel" binding="authenticationMethod">
         <constraints>
           <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>

@@ -2,10 +2,7 @@ package com.company.GUIcontainers;
 
 import com.company.AccountManagers.Profile;
 import com.company.Authentication.Authentication;
-import com.company.Utiliity.Data;
-import com.company.Utiliity.MenuAction;
-import com.company.Utiliity.Tuple;
-import com.company.Utiliity.Util;
+import com.company.Utiliity.*;
 import com.company.enums.AuthenticationMethod;
 
 import javax.swing.*;
@@ -138,6 +135,7 @@ public class GUI {
         MenuAction showAccountDetailsAction = new MenuAction("Show Account Details"){
             @Override
             public void Main(){
+                EventManager.fireEvent(Data.PROFILE_UPDATE);
                 replacePanel(_accountDetailsPanel);
             }
         };
