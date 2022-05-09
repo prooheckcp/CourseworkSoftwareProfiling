@@ -13,7 +13,7 @@ with whatever panels you want.
 public class GUI {
 
     //Constants
-    Dimension MINIMUM_DIMENSION = new Dimension(500, 400);
+    Dimension MINIMUM_DIMENSION = new Dimension(700, 400);
     String APPLICATION_NAME = "University of Bradford | IT services";
 
     //Variables
@@ -155,6 +155,19 @@ public class GUI {
             authenticationWindowActions.add(menuAction);
         }
     }
+
+    public void goToMainWindow(){
+        replacePanel(_mainPanel);
+    }
+
+    public void loginAttempt(String username, String password){
+
+    }
+
+    public void registerAttempt(String username, String password){
+
+    }
+
     protected void setupEvents(){
         setupMainWindowEvents();
         setupProfileWindowActions();

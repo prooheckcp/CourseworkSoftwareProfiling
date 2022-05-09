@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.GUIs.Windows.WindowsLogin;
 import com.company.GUIs.Windows.WindowsOptions;
 import com.company.GUIs.Windows.WindowsRegister;
 
@@ -28,12 +29,17 @@ public class windowsGUI extends GUI {
                 authenticationWindowActions
         );
 
-        //Populating the required panels for the application
+        //Populating the options panels
         setMainPanel(mainWindow.getMainContainer());
         setProfilePanel(profileWindow.getMainContainer());
         setAuthenticationPanel(authenticationWindow.getMainContainer());
 
-        setRegisterPanel(new WindowsRegister().getMainContainer());
+        //Create the rest of the panels
+        WindowsRegister windowsRegister = new WindowsRegister(this);
+        WindowsLogin windowsLogin = new WindowsLogin(this);
+
+        setLoginPanel(windowsLogin.getMainContainer());
+        setRegisterPanel(windowsRegister.getMainContainer());
 
         super.start();
     }

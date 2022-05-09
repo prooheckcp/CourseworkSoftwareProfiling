@@ -1,23 +1,22 @@
 package com.company.GUIs.Windows;
 
 import com.company.GUI;
-import com.company.MenuAction;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class WindowsRegister {
+public class WindowsLogin {
     private JPanel mainContainer;
-    private JLabel RegisterTitle;
-    private JTextField passwordInput;
-    private JTextField usernameInput;
-    private JButton registerButton;
-    private JButton goBackButton;
+    private JLabel LoginTitle;
     private JPanel inputContainer;
+    private JTextField usernameInput;
+    private JTextField passwordInput;
+    private JButton goBackButton;
+    private JButton loginButton;
     private JLabel usernameTitle;
 
-    public WindowsRegister(GUI gui){
+    public WindowsLogin(GUI gui){
         goBackButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
