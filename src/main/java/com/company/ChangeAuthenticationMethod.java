@@ -20,7 +20,7 @@ public class ChangeAuthenticationMethod extends MenuAction {
         super(actionName);
     }
 
-    public Boolean Main(){
+    public void Main(){
         String finalMessage = "";
         Integer index = 0;
 
@@ -42,19 +42,18 @@ public class ChangeAuthenticationMethod extends MenuAction {
         if(!temp.containsKey(filteredUserOption)){
             Util.print("Error: Selected option is not valid!");
             Main();
-            return true;
         }
 
         AuthenticationMethod selectedMethod = temp.get(filteredUserOption);
 
         if(Profile.currentUser == null)
-            return false;
+            return;
 
         if(selectedMethod == AuthenticationMethod.PASSWORD)
             Profile.currentUser.setAuthenticationMethod(AuthenticationMethod.NONE);
         else
             Profile.currentUser.setAuthenticationMethod(selectedMethod);
 
-        return true;
+        return;
     };
 }

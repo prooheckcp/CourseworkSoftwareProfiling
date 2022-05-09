@@ -17,10 +17,10 @@ public class CheckAccountDetails extends MenuAction {
         super(actionName);
     }
 
-    public Boolean Main(){
+    public void Main(){
         if(Profile.currentUser == null){
             Util.print("Error: Current user is invalid!");
-            return false;
+            return;
         }
 
         User user = Profile.currentUser;
@@ -30,7 +30,5 @@ public class CheckAccountDetails extends MenuAction {
         Util.print("Phone number: " + user.getPhoneNumber());
         Util.print("Privilege: " + Data.privilegeStrings.get(user.getPrivilege()));
         Util.print("Authentication Method: " + Data.authenticationStrings.get(user.getAuthenticationMethod()) + "\n");
-
-        return true;
     };
 }

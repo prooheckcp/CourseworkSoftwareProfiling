@@ -34,7 +34,7 @@ public class LoginUser extends MenuAction {
         Profile.login(user);
     }
 
-    public Boolean Main(){
+    public void Main(){
         Util.print("Login:");
         Util.printInLine("Username: ");
         String insertedUsername = Util.getLine();
@@ -47,7 +47,7 @@ public class LoginUser extends MenuAction {
             if(Util.retryPrompt())
                 Main();
 
-            return true;
+            return;
         }
 
         //First authentication step
@@ -57,11 +57,11 @@ public class LoginUser extends MenuAction {
             if(Util.retryPrompt())
                 Main();
 
-            return true;
+            return;
         }
 
         loginAttempt(getUserResult.getValue2());
 
-        return true;
+        return;
     }
 }

@@ -17,9 +17,8 @@ public class Logout extends MenuAction {
         super(actionName);
     }
 
-    public Boolean Main(){
+    public void Main(){
         //Log out user
         Profile.currentUser = null;
-        return false;
     };
 }

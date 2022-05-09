@@ -2,6 +2,7 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Vector;
 
 /*
 This class holds the GUI of an application. It allows you to build your own GUI
@@ -23,6 +24,9 @@ public class GUI {
     private JPanel _profilePanel;
     private JPanel _authenticationPanel;
     private JPanel _accountDetailsPanel;
+
+    //Store actions
+    Vector<MenuAction> mainWindowActions = new Vector<MenuAction>();
 
     //Getters
     protected JPanel getMainPanel(){
@@ -81,6 +85,30 @@ public class GUI {
 
         applicationFrame.getContentPane().removeAll(); //Clear current panel
         applicationFrame.add(newPanel);
+    }
+
+    private void setupMainWindowEvents(){
+        MenuAction loginAction = new MenuAction("Log-in"){
+            @Override
+            public void Main(){
+                Util.print("log");
+            }
+        };
+
+        MenuAction registerAction = new MenuAction("Register"){
+            @Override
+            public void Main(){
+                Util.print("register");
+
+            }
+        };
+
+        mainWindowActions.add(loginAction);
+        mainWindowActions.add(registerAction);
+    }
+
+    protected void setupEvents(){
+        setupMainWindowEvents();
     }
 
     public void start(){

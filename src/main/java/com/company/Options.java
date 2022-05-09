@@ -65,10 +65,7 @@ public class Options {
             promptOptions();
             return;
         }
-        MenuAction menuAction = menuActions[userSelectedOption - 1];
-
-        if (menuAction.Main())
-            promptOptions();
+        MenuAction menuAction = menuActions[userSelectedOption - 1];;
     }
 
     private Boolean isValidOption(Integer index){

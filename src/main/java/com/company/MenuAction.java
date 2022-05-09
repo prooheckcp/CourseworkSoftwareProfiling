@@ -23,9 +23,8 @@ public class MenuAction {
     }
 
     //Manages the following steps for this menu action
-    public Boolean Main(){
+    public void Main(){
         System.out.println("This Menu action has not been implemented yet!");
-        return false;
     };
 
 }

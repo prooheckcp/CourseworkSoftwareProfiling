@@ -17,7 +17,7 @@ public class RegisterUser extends MenuAction{
         super(actionName);
     }
 
-    public Boolean Main(){
+    public void Main(){
         Util.print("Register:");
         Util.printInLine("Username: ");
         String insertedUsername = Util.getLine();
@@ -30,7 +30,7 @@ public class RegisterUser extends MenuAction{
             if(Util.retryPrompt())
                 Main();
 
-            return false;
+            return;
         }
 
         Util.print("Account created!");
@@ -38,6 +38,6 @@ public class RegisterUser extends MenuAction{
         //No need to check if value1 is true because we just made this user
         LoginUser.loginAttempt(Data.getUser(insertedUsername.strip()).getValue2());
 
-        return true;
+        return;
     }
 }
