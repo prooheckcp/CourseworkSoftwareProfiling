@@ -24,16 +24,4 @@ public class DataTest {
             Assertions.assertNull(result.getValue2());
         }
     }
-
-    @DisplayName("Create some random users")
-    @ParameterizedTest
-    @ValueSource(strings = {"word", "prooheckcp", "someOtherUser"})
-    void createUser(String username){
-        Tuple<Boolean, String> result = Data.createUser(username, "");
-        if(!result.getValue1())
-            Util.print(result.getValue2());
-
-        Tuple<Boolean, User> result2 = Data.getUser(username);
-        Assertions.assertNotNull(result2.getValue2());
-    }
 }

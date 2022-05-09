@@ -41,6 +41,22 @@ public class Profile {
         if(!passwordMatches)
             return new Tuple<>(false, "Inserted password is incorrect!");
 
+        //Checks for authentication method
+
+
+        //Logs into the account
+        login(user);
+
+        return new Tuple<>(true, "");
+    }
+
+    public static Tuple<Boolean, String> registerAttempt(String username, String password){
+        Tuple<Boolean, User> getUserResponse = Data.getUser(username);
+
+        if(getUserResponse.getValue1())
+            return new Tuple<>(false, "Inserted username is already taken");
+
+        User user = Data.createUser(username, password);
         login(user);
 
         return new Tuple<>(true, "");

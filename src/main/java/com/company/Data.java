@@ -89,17 +89,10 @@ public class Data {
         return new Tuple(false, null);
     }
 
-    public static Tuple<Boolean, String> createUser(String username, String password){
-        username = username.strip();
+    public static User createUser(String username, String password){
+        User user = new User(username.strip(), password);
+        userList.add(user);
 
-        for(int index = 0; index < userList.size(); index++){
-            if(userList.get(index).getUsername().strip().equals(username)){
-                return new Tuple<>(false, "The username: " + username + " is already taken!");
-            }
-        }
-
-        userList.add(new User(username.strip(), password));
-
-        return new Tuple<>(true, "");
+        return user;
     }
 }
