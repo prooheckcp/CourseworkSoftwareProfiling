@@ -18,7 +18,6 @@ public class Profile {
 
             Util.print("Welcome back, " + user.getUsername() + "!");
             Util.print("What do you wish to do?\n");
-            Data.profileWindowOptions.promptOptions();
         }catch(NullPointerException e){
             return;
         }

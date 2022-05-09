@@ -60,18 +60,17 @@ public class Data {
         put(AuthenticationMethod.EMAIL, "Email");
     }};
 
-    
+    public static Vector<MenuAction> mainWindowActions = new Vector<>(){{
+        add(new RegisterUser("Register"));
+        add(new LoginUser("Log-in"));
+    }};
 
-    public static Options profileWindowOptions = new Options("Profile options", new MenuAction[]{
-            new CheckAccountDetails("Show account details"),
-            new ChangeAuthenticationMethod("Change authentication method"),
-            new Logout("Log-out")
-    });
+    public static Vector<MenuAction> profileWindowActions = new Vector<>(){{
+        add(new CheckAccountDetails("Show account details"));
+        add(new ChangeAuthenticationMethod("Change authentication method"));
+        add(new Logout("Log-out"));
+    }};
 
-    public static Options mainWindowOptions = new Options("Main window", new MenuAction[]{
-            new RegisterUser("Register"),
-            new LoginUser("Log-in")
-    });
 
     //Random basic admin account for testing purposes
     private static Vector<User> userList = new Vector<User>(){{
