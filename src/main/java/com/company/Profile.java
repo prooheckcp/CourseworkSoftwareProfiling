@@ -12,6 +12,11 @@ Simple class to manage a pseudo user profile
 */
 public class Profile {
     public static User currentUser;
+
+    public static void logout(){
+        currentUser = null;
+    }
+
     public static void login(User user){
         try{
             currentUser = user;

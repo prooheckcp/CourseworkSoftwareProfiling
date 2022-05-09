@@ -115,6 +115,7 @@ public class GUI {
         MenuAction logoutAction = new MenuAction("Log-out"){
             @Override
             public void Main(){
+                Profile.logout();
                 replacePanel(_mainPanel);
             }
         };
