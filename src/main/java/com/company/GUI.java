@@ -2,6 +2,7 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Map;
 import java.util.Vector;
 
 /*
@@ -27,6 +28,8 @@ public class GUI {
 
     //Store actions
     Vector<MenuAction> mainWindowActions = new Vector<MenuAction>();
+    Vector<MenuAction> profileWindowActions = new Vector<MenuAction>();
+    Vector<MenuAction> authenticationWindowActions = new Vector<MenuAction>();
 
     //Getters
     protected JPanel getMainPanel(){
@@ -108,8 +111,53 @@ public class GUI {
         mainWindowActions.add(registerAction);
     }
 
+    private void setupProfileWindowActions(){
+        MenuAction logoutAction = new MenuAction("Log-out"){
+            @Override
+            public void Main(){
+                replacePanel(_mainPanel);
+            }
+        };
+
+        MenuAction changeAuthenticationAction = new MenuAction("Change Authentication Method"){
+            @Override
+            public void Main(){
+                replacePanel(_authenticationPanel);
+            }
+        };
+
+        MenuAction showAccountDetailsAction = new MenuAction("Show Account Details"){
+            @Override
+            public void Main(){
+                replacePanel(_accountDetailsPanel);
+            }
+        };
+
+        profileWindowActions.add(logoutAction);
+        profileWindowActions.add(changeAuthenticationAction);
+        profileWindowActions.add(showAccountDetailsAction);
+    }
+
+    private void setupAuthenticationWindowActions(){
+        for (Map.Entry<AuthenticationMethod, Authentication> entry : Data.authenticationList.entrySet()) {
+            AuthenticationMethod key = entry.getKey();
+            String authenticationName = Data.authenticationStrings.get(key);
+
+            MenuAction menuAction = new MenuAction(authenticationName){
+                @Override
+                public void Main() {
+                    Profile.currentUser.setAuthenticationMethod(key);
+                    replacePanel(_profilePanel);
+                }
+            };
+
+            authenticationWindowActions.add(menuAction);
+        }
+    }
     protected void setupEvents(){
         setupMainWindowEvents();
+        setupProfileWindowActions();
+        setupAuthenticationWindowActions();
     }
 
     public void start(){
