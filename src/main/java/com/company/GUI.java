@@ -85,21 +85,22 @@ public class GUI {
 
         applicationFrame.getContentPane().removeAll(); //Clear current panel
         applicationFrame.add(newPanel);
+        applicationFrame.revalidate();
+        applicationFrame.repaint();
     }
 
     private void setupMainWindowEvents(){
         MenuAction loginAction = new MenuAction("Log-in"){
             @Override
             public void Main(){
-                Util.print("log");
+                replacePanel(_loginPanel);
             }
         };
 
         MenuAction registerAction = new MenuAction("Register"){
             @Override
             public void Main(){
-                Util.print("register");
-
+                replacePanel(_registerPanel);
             }
         };
 
