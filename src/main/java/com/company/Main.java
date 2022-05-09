@@ -9,12 +9,6 @@ public class Main {
         Data.declareTestUsers();
         Data.populateAuthenticationList();
 
-        Util.print(Data.INITIAL_MESSAGE);
 
-        /*
-        while(true) {
-            Data.mainWindowOptions.promptOptions();
-        }
-        */
     }
 }
