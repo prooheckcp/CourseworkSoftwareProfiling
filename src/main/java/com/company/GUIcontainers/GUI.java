@@ -168,6 +168,10 @@ public class GUI {
         replacePanel(_mainPanel);
     }
 
+    public void goToProfileWindow(){
+        replacePanel(_profilePanel);
+    }
+
     public void loginAttempt(String username, String password){
         Tuple<Boolean, String> loginAttemptResponse = Profile.loginAttempt(username, password);
         Boolean success = loginAttemptResponse.getValue1();

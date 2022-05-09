@@ -1,6 +1,7 @@
 package com.company.GUIcontainers;
 
 import com.company.GUIcontainers.GUI;
+import com.company.GUIs.Windows.WindowsAccountDetails;
 import com.company.GUIs.Windows.WindowsLogin;
 import com.company.GUIs.Windows.WindowsOptions;
 import com.company.GUIs.Windows.WindowsRegister;
@@ -38,9 +39,11 @@ public class windowsGUI extends GUI {
         //Create the rest of the panels
         WindowsRegister windowsRegister = new WindowsRegister(this);
         WindowsLogin windowsLogin = new WindowsLogin(this);
+        WindowsAccountDetails windowsAccountDetails = new WindowsAccountDetails(this);
 
         setLoginPanel(windowsLogin.getMainContainer());
         setRegisterPanel(windowsRegister.getMainContainer());
+        setAccountDetailsPanel(windowsAccountDetails.getMainContainer());
 
         super.start();
     }
