@@ -7,12 +7,6 @@ to save data related to the program and other static data
 such as option lists
 
     Static methods:
-        populateAuthenticationList
-            Description: Populates the authentication list
-
-        declareTestUsers
-            Description: Sets some test users to the program.
-
         getUser
             Description: This method is used to find a user by his username
             and retrieve it.
@@ -42,7 +36,17 @@ import java.util.Map;
 import java.util.Vector;
 
 public class Data {
-    public static final Map<AuthenticationMethod, Authentication> authenticationList = new HashMap<>();
+
+    public static final OperatingSystem currentOperatingSystem = OperatingSystem.WINDOWS; //Hardcoded
+    public static final Map<AuthenticationMethod, Authentication> authenticationList = new HashMap<>(){{
+        put(AuthenticationMethod.PASSWORD, new PasswordAuthentication());
+        put(AuthenticationMethod.TWO_FACTOR, new TwoFactorAuthentication());
+        put(AuthenticationMethod.EMAIL, new EmailAuthentication());
+    }};
+    public static final Map<OperatingSystem, GUI> GUIList = new HashMap<>(){{
+        put(OperatingSystem.WINDOWS, new windowsGUI());
+        put(OperatingSystem.LINUX, new linuxGUI());
+    }};
 
     public static Map<Privilege, String> privilegeStrings = new HashMap<>(){{
         put(Privilege.GUEST, "Guest");
@@ -67,37 +71,24 @@ public class Data {
             new LoginUser("Log-in")
     });
 
-    public static final String INITIAL_MESSAGE =
-            "Welcome to the IT " +
-            "services of the University of Bradford!\n" +
-            "What do you wish to do?\n";
-
-    private static Vector<User> userList = new Vector<User>();
-
-    public static void populateAuthenticationList(){
-        authenticationList.put(AuthenticationMethod.PASSWORD, new PasswordAuthentication());
-        authenticationList.put(AuthenticationMethod.TWO_FACTOR, new TwoFactorAuthentication());
-        authenticationList.put(AuthenticationMethod.EMAIL, new EmailAuthentication());
-    }
-
-    public static void declareTestUsers(){
-        //Random basic admin account for testing purposes
-        userList.add(
-                new User(
-                "prooheckcp",
-                "password",
-                Privilege.ADMIN,
-                AuthenticationMethod.NONE)
+    //Random basic admin account for testing purposes
+    private static Vector<User> userList = new Vector<User>(){{
+        add(
+            new User(
+                    "prooheckcp",
+                    "password",
+                    Privilege.ADMIN,
+                    AuthenticationMethod.NONE)
         );
 
-        userList.add(
-                new User(
-                        "proohec",
-                        "password",
-                        Privilege.ADMIN,
-                        AuthenticationMethod.EMAIL)
+        add(
+            new User(
+                    "proohec",
+                    "password",
+                    Privilege.ADMIN,
+                    AuthenticationMethod.EMAIL)
         );
-    }
+    }};
 
     public static Tuple<Boolean, User> getUser(String username){
         for(int index = 0; index < userList.size(); index++){

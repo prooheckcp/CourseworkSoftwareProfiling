@@ -10,12 +10,6 @@ by the "pseudo-database"
 */
 
 public class DataTest {
-    @BeforeAll
-    static void startData(){
-        Data.populateAuthenticationList();
-        Data.declareTestUsers();
-    }
-
     @DisplayName("Get random users")
     @ParameterizedTest
     @ValueSource(strings = {"prooheckcp", "tom", "proohec", "anotherUser"})

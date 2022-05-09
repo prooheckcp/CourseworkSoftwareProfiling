@@ -33,8 +33,7 @@ public class MenuActionsTest{
                             Privilege.GUEST,
                             AuthenticationMethod.TWO_FACTOR
                     );
-        Data.populateAuthenticationList();
-        Data.declareTestUsers();
+
         loginUser = new LoginUser("Login User");
         registerUser = new RegisterUser("Register user");
     }
