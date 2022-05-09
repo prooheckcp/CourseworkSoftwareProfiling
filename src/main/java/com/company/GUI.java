@@ -161,7 +161,16 @@ public class GUI {
     }
 
     public void loginAttempt(String username, String password){
+        Tuple<Boolean, String> loginAttemptResponse = Profile.loginAttempt(username, password);
+        Boolean success = loginAttemptResponse.getValue1();
+        String errorMessage = loginAttemptResponse.getValue2();
 
+        if(!success){
+            JOptionPane.showMessageDialog(null, errorMessage);
+            return;
+        }
+
+        replacePanel(_profilePanel);
     }
 
     public void registerAttempt(String username, String password){

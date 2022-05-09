@@ -24,6 +24,16 @@ public class WindowsRegister {
                 gui.goToMainWindow();
             }
         });
+
+        registerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String insertedUsername = usernameInput.getText().trim();
+                String insertedPassword = passwordInput.getText().trim();
+
+                gui.registerAttempt(insertedUsername, insertedPassword);
+            }
+        });
     };
 
     public JPanel getMainContainer(){

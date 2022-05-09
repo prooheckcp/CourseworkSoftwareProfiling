@@ -20,11 +20,29 @@ public class Profile {
     public static void login(User user){
         try{
             currentUser = user;
-
-            Util.print("Welcome back, " + user.getUsername() + "!");
-            Util.print("What do you wish to do?\n");
         }catch(NullPointerException e){
             return;
         }
+    }
+
+    public static Tuple<Boolean, String> loginAttempt(String username, String password){
+        Tuple<Boolean, User> getUserResponse = Data.getUser(username);
+
+        //Check if the user exists
+        if(!getUserResponse.getValue1())
+            return new Tuple<>(false, "The user by the name of: " + username + " does not exist");
+
+        User user = getUserResponse.getValue2();
+
+        //Check if the password is correct
+        Authentication authentication = Data.authenticationList.get(AuthenticationMethod.PASSWORD);
+        boolean passwordMatches = authentication.loginAttempt(user, password);
+
+        if(!passwordMatches)
+            return new Tuple<>(false, "Inserted password is incorrect!");
+
+        login(user);
+
+        return new Tuple<>(true, "");
     }
 }

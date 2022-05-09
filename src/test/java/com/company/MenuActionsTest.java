@@ -15,8 +15,6 @@ public class MenuActionsTest{
     //All the actions that exist
     static User user;
     static User user2;
-    static LoginUser loginUser;
-    static RegisterUser registerUser;
 
     @BeforeAll
     static void startData(){
@@ -33,9 +31,6 @@ public class MenuActionsTest{
                             Privilege.GUEST,
                             AuthenticationMethod.TWO_FACTOR
                     );
-
-        loginUser = new LoginUser("Login User");
-        registerUser = new RegisterUser("Register user");
     }
 
     @DisplayName("Testing log in attempt")
@@ -44,8 +39,6 @@ public class MenuActionsTest{
         //Force log-out in case the log in works
         ByteArrayInputStream argumentsIn = new ByteArrayInputStream("3".getBytes());
         System.setIn(argumentsIn);
-
-        LoginUser.loginAttempt(user);
     }
 
     @DisplayName("Testing log in attempt with 2FA")
@@ -58,8 +51,6 @@ public class MenuActionsTest{
         //Force log-out in case the log in works
         ByteArrayInputStream argumentsIn = new ByteArrayInputStream(simulatedInput.getBytes());
         System.setIn(argumentsIn);
-
-        LoginUser.loginAttempt(user2);
     }
 
     @DisplayName("Testing log in functionality")
@@ -72,8 +63,6 @@ public class MenuActionsTest{
 
         ByteArrayInputStream argumentsIn = new ByteArrayInputStream(simulatedInput.getBytes());
         System.setIn(argumentsIn);
-
-        loginUser.Main();
     }
 
     @DisplayName("Testing register functionality")
@@ -91,8 +80,6 @@ public class MenuActionsTest{
 
         ByteArrayInputStream argumentsIn = new ByteArrayInputStream(simulatedInput.getBytes());
         System.setIn(argumentsIn);
-
-        registerUser.Main();
     }
 
     @DisplayName("Testing register functionality")
@@ -110,8 +97,6 @@ public class MenuActionsTest{
 
         ByteArrayInputStream argumentsIn = new ByteArrayInputStream(simulatedInput.getBytes());
         System.setIn(argumentsIn);
-
-        registerUser.Main();
     }
 
     @DisplayName("Testing register functionality")
@@ -129,7 +114,5 @@ public class MenuActionsTest{
 
         ByteArrayInputStream argumentsIn = new ByteArrayInputStream(simulatedInput.getBytes());
         System.setIn(argumentsIn);
-
-        registerUser.Main();
     }
 }

@@ -23,6 +23,16 @@ public class WindowsLogin {
                 gui.goToMainWindow();
             }
         });
+
+        loginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String insertedUsername = usernameInput.getText().trim();
+                String insertedPassword = passwordInput.getText().trim();
+
+                gui.loginAttempt(insertedUsername, insertedPassword);
+            }
+        });
     };
 
     public JPanel getMainContainer(){

@@ -60,18 +60,6 @@ public class Data {
         put(AuthenticationMethod.EMAIL, "Email");
     }};
 
-    public static Vector<MenuAction> mainWindowActions = new Vector<>(){{
-        add(new RegisterUser("Register"));
-        add(new LoginUser("Log-in"));
-    }};
-
-    public static Vector<MenuAction> profileWindowActions = new Vector<>(){{
-        add(new CheckAccountDetails("Show account details"));
-        add(new ChangeAuthenticationMethod("Change authentication method"));
-        add(new Logout("Log-out"));
-    }};
-
-
     //Random basic admin account for testing purposes
     private static Vector<User> userList = new Vector<User>(){{
         add(
