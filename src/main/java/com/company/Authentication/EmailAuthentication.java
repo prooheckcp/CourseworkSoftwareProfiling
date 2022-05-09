@@ -3,6 +3,7 @@ package com.company.Authentication;
 import com.company.AccountManagers.User;
 import com.company.Utiliity.Util;
 
+import javax.swing.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
@@ -42,15 +43,8 @@ public class EmailAuthentication implements Authentication {
 
         sendCode(generatedCode);
 
-        Util.print("A code was sent to your email!");
-
-        Util.printInLine("Code: ");
-        String insertedCode = Util.getLine();
-
-        Boolean correctCode =  insertedCode.strip().equals(generatedCode);
-
-        if(!correctCode)
-            Util.print("Inserted code is incorrect!");
+        String response = JOptionPane.showInputDialog("A code has been sent to your email! Insert it below").trim();
+        Boolean correctCode =  response.strip().equals(generatedCode);
 
         return correctCode;
     }

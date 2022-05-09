@@ -2,6 +2,7 @@ package com.company.Authentication;
 import com.company.AccountManagers.User;
 import com.company.Utiliity.Util;
 
+import javax.swing.*;
 import java.util.Random;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -50,15 +51,8 @@ public class TwoFactorAuthentication implements Authentication {
         String generatedCodeString = generatedCode.toString();
         sendCode(generatedCode);
 
-        Util.print("A code was sent to your mobile device!");
-
-        Util.printInLine("Code: ");
-        String insertedCode = Util.getLine();
-
-        Boolean correctCode = insertedCode.strip().equals(generatedCodeString);
-
-        if(!correctCode)
-            Util.print("Inserted code is incorrect!");
+        String response = JOptionPane.showInputDialog("A code has been sent to your phone! Insert it below").trim();
+        Boolean correctCode = response.strip().equals(generatedCodeString);
 
         return correctCode;
     }

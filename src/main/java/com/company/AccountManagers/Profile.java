@@ -3,6 +3,7 @@ package com.company.AccountManagers;
 import com.company.Authentication.Authentication;
 import com.company.Utiliity.Data;
 import com.company.Utiliity.Tuple;
+import com.company.Utiliity.Util;
 import com.company.enums.AuthenticationMethod;
 
 /*
@@ -40,14 +41,20 @@ public class Profile {
         User user = getUserResponse.getValue2();
 
         //Check if the password is correct
-        Authentication authentication = Data.authenticationList.get(AuthenticationMethod.PASSWORD);
-        boolean passwordMatches = authentication.loginAttempt(user, password);
+        Authentication passwordAuthentication = Data.authenticationList.get(AuthenticationMethod.PASSWORD);
+        boolean passwordMatches = passwordAuthentication.loginAttempt(user, password);
 
         if(!passwordMatches)
             return new Tuple<>(false, "Inserted password is incorrect!");
 
         //Checks for authentication method
+        if(user.getAuthenticationMethod() != null && Data.authenticationList.containsKey(user.getAuthenticationMethod())){
+            Authentication authentication = Data.authenticationList.get(user.getAuthenticationMethod());
+            Boolean success = authentication.loginAttempt(user, password);
 
+            if(!success)
+                return new Tuple<>(false, "Failed authentication");
+        }
 
         //Logs into the account
         login(user);
