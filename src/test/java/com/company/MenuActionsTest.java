@@ -1,10 +1,12 @@
 package com.company;
 
+import com.company.AccountManagers.User;
+import com.company.enums.AuthenticationMethod;
+import com.company.enums.Privilege;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import java.io.ByteArrayInputStream;
-import java.util.Scanner;
 
 /*
 This file tests the menu actions used on the app

@@ -4,8 +4,7 @@ package com.company.GUIs.Windows;
 This is a template for Windows options panels
 */
 
-import com.company.MenuAction;
-import com.company.Util;
+import com.company.Utiliity.MenuAction;
 
 import javax.swing.*;
 import java.awt.*;

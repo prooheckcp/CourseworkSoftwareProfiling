@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.AccountManagers.Profile;
+import com.company.AccountManagers.User;
 import org.junit.jupiter.api.*;
 import java.io.ByteArrayInputStream;
 

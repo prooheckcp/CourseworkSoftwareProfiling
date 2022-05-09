@@ -1,7 +1,6 @@
 package com.company.GUIs.Windows;
 
-import com.company.GUI;
-import com.company.MenuAction;
+import com.company.GUIcontainers.GUI;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
