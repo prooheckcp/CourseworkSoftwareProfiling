@@ -2,7 +2,6 @@ package com.company.GUIcontainers;
 
 import com.company.AccountManagers.Profile;
 import com.company.AccountManagers.User;
-import com.company.GUIcontainers.GUI;
 import com.company.GUIs.Windows.WindowsAccountDetails;
 import com.company.GUIs.Windows.WindowsLogin;
 import com.company.GUIs.Windows.WindowsOptions;
@@ -21,7 +20,7 @@ public class windowsGUI extends GUI {
 
         //Creating options panels
         WindowsOptions mainWindow = new WindowsOptions(
-                "Main Hub",
+                "Main Hub (Windows Version)",
                 "Please select what you wish to do.",
                 mainWindowActions
         );

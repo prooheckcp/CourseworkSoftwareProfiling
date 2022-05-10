@@ -2,15 +2,10 @@ package com.company.GUIcontainers;
 
 import com.company.AccountManagers.Profile;
 import com.company.AccountManagers.User;
-import com.company.GUIcontainers.GUI;
 import com.company.GUIs.Linux.LinuxAccountDetails;
 import com.company.GUIs.Linux.LinuxLogin;
 import com.company.GUIs.Linux.LinuxOptions;
 import com.company.GUIs.Linux.LinuxRegister;
-import com.company.GUIs.Windows.WindowsAccountDetails;
-import com.company.GUIs.Windows.WindowsLogin;
-import com.company.GUIs.Windows.WindowsOptions;
-import com.company.GUIs.Windows.WindowsRegister;
 import com.company.Utiliity.Data;
 import com.company.Utiliity.Event;
 import com.company.Utiliity.EventManager;
@@ -25,7 +20,7 @@ public class linuxGUI extends GUI {
 
         //Creating options panels
         LinuxOptions mainWindow = new LinuxOptions(
-                "Main Hub",
+                "Main Hub (Linux Version)",
                 "Please select what you wish to do.",
                 mainWindowActions
         );
