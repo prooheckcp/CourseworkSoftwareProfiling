@@ -55,7 +55,7 @@ public class windowsGUI extends GUI {
         EventManager.addListener(Data.PROFILE_UPDATE, new Event(){
             @Override
             public void action(){
-                User user = Profile.currentUser;
+                User user = Profile.getCurrentUser();
 
                 if(user == null)
                     return;
@@ -87,7 +87,7 @@ public class windowsGUI extends GUI {
         EventManager.addListener(Data.LOGGED_IN, new Event(){
             @Override
             public void action() {
-                profileWindow.setDescription("Welcome back " + Profile.currentUser.getUsername() + "! What are you doing today?");
+                profileWindow.setDescription("Welcome back " + Profile.getCurrentUser().getUsername() + "! What are you doing today?");
             }
         });
 

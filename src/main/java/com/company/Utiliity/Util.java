@@ -32,7 +32,6 @@ methods.
 */
 
 import javax.swing.*;
-import java.util.Scanner;
 
 public class Util {
 
@@ -42,6 +41,14 @@ public class Util {
 
     public static void warning(String message){
         JOptionPane.showMessageDialog(null, message);
+    }
+
+    public static Tuple<Boolean, String> responseTuple(Boolean first, String second){
+        return new Tuple<Boolean, String>(first, second);
+    }
+
+    public static Tuple<Boolean, String> responseTuple(Boolean first){
+        return responseTuple(first, "");
     }
 
     public static void printInLine(String message){

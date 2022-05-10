@@ -153,7 +153,7 @@ public class GUI {
             MenuAction menuAction = new MenuAction(authenticationName){
                 @Override
                 public void Main() {
-                    Profile.currentUser.setAuthenticationMethod(key);
+                    Profile.getCurrentUser().setAuthenticationMethod(key);
                     replacePanel(_profilePanel);
                 }
             };
