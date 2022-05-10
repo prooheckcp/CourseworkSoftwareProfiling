@@ -37,13 +37,16 @@ Requiring the user to input three letters.
 */
 
 public class EmailAuthentication implements Authentication {
+    //Constants
+    private String WARNING_MESSAGE = "A code has been sent to your email! Insert it below";
+
     public boolean loginAttempt(User _a, String _b) {
         //Generate a 3 letter sequence
         String generatedCode = "" + randomChar() + randomChar() + randomChar();
 
         sendCode(generatedCode);
 
-        String response = JOptionPane.showInputDialog("A code has been sent to your email! Insert it below").trim();
+        String response = Util.getLine(WARNING_MESSAGE).trim();
         Boolean correctCode =  response.strip().equals(generatedCode);
 
         return correctCode;

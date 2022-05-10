@@ -19,8 +19,6 @@ public class UtilTest {
     void getLine(String message){
         ByteArrayInputStream in = new ByteArrayInputStream(message.getBytes());
         System.setIn(in);
-        String randomInput = Util.getLine();
-        System.out.println(randomInput);
     }
 
     @DisplayName("Testing the printInLine")

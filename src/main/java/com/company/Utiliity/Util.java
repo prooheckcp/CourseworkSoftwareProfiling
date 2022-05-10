@@ -31,15 +31,17 @@ methods.
                 String message
 */
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Util {
-    private static Scanner scanner = new Scanner(System.in);
 
-    public static String getLine(){
-        if(scanner.hasNextLine())
-            return scanner.nextLine();
-        return "";
+    public static String getLine(String message){
+        return JOptionPane.showInputDialog(message);
+    }
+
+    public static void warning(String message){
+        JOptionPane.showMessageDialog(null, message);
     }
 
     public static void printInLine(String message){

@@ -176,7 +176,7 @@ public class GUI {
         String errorMessage = loginAttemptResponse.getValue2();
 
         if(!success){
-            JOptionPane.showMessageDialog(null, errorMessage);
+            Util.warning(errorMessage);
             return;
         }
 
@@ -191,7 +191,7 @@ public class GUI {
         String errorMessage = registerAttemptResponse.getValue2();
 
         if(!success){
-            JOptionPane.showMessageDialog(null, errorMessage);
+            Util.warning(errorMessage);
             return;
         }
 

@@ -30,6 +30,8 @@ Requiring the user to input three numbers.
 */
 
 public class TwoFactorAuthentication implements Authentication {
+    //Constants
+    private String WARNING_MESSAGE = "A code has been sent to your phone! Insert it below";
 
     //Sends the code to a txt file
     private void sendCode(Integer code){
@@ -51,7 +53,7 @@ public class TwoFactorAuthentication implements Authentication {
         String generatedCodeString = generatedCode.toString();
         sendCode(generatedCode);
 
-        String response = JOptionPane.showInputDialog("A code has been sent to your phone! Insert it below").trim();
+        String response = Util.getLine(WARNING_MESSAGE).trim();
         Boolean correctCode = response.strip().equals(generatedCodeString);
 
         return correctCode;
