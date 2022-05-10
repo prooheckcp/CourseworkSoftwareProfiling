@@ -1,5 +1,6 @@
 package com.company.AccountManagers;
 
+//Imports
 import com.company.Authentication.Authentication;
 import com.company.Utiliity.Data;
 import com.company.Utiliity.Tuple;
@@ -7,14 +8,76 @@ import com.company.Utiliity.Util;
 import com.company.enums.AuthenticationMethod;
 
 /*
-Simple class to manage a pseudo user profile
+    This class manages user profile actions such as current profile, login and register.
 
-    Static methods:
+    Private Static methods:
+        usernameSanityCheck
+            Description:
+                Validates if the user input for the username is in the correct form
+
+            Arguments:
+                username : String -> The username that you want to validate
+
+            Returns:
+                Tuple<Boolean, String> -> Returns if it passed the sanity check and the error message in case of false
+
+        passwordSanityCheck
+            Description:
+                Validates if the user input for the password is in the correct form
+
+            Arguments:
+                password : String -> the password that you want to validate
+
+            Returns:
+                Tuple<Boolean, String> -> Returns if it passed the sanity check and the error message in case of false
+
         login
-            Description: logs in into given user
+            Description:
+                Logs in into given user
 
             Arguments:
                 user : User -> User that you wish to log in into
+
+    Public Static methods:
+        getCurrentUser
+            Description:
+                Returns the current user that is logged in. Will return NULL is no user is logged.
+
+            Returns:
+                User -> Logged user
+
+        logout
+            Description:
+                Logouts the current user
+
+        login
+            Description:
+                Logs into the account of the given user.
+
+            Arguments:
+                user : User -> User you wish to log into
+
+        loginAttempt
+            Description:
+                Attempts to log in with the given user input. Returns the result of whether the log in worked or not and the followed by an error message
+
+            Arguments:
+                username : String -> the username of the account you wish to log in into
+                password : String -> the password of the account that you wish to log in into
+
+            Returns:
+                Tuple<Boolean, String> -> Returns if the login worked followed by an error message if it fails
+
+        registerAttempt
+            Description:
+                Attempts to add a new account with the given user input into the pseudo-database. In case it fails it will give feedback to the user
+
+            Arguments:
+                username : String -> the username of the account you wish to create
+                password : String -> the password of the account that you wish to create
+
+            Returns:
+                Tuple<Boolean, String> -> Returns if the register worked followed by an error message if it fails
 */
 public class Profile {
 
@@ -33,6 +96,7 @@ public class Profile {
     //Variables
     private static User currentUser;
 
+    //Methods
     private static Tuple<Boolean, String> usernameSanityCheck(String username){
         int usernameLength = username.length();
 
