@@ -53,12 +53,14 @@ public class Data {
     public static String PROFILE_UPDATE = "profileUpdateEvent";
     public static String LOGGED_IN = "loggedInEvent";
 
-    public static final OperatingSystem currentOperatingSystem = OperatingSystem.WINDOWS; //Hardcoded
+    public static final OperatingSystem currentOperatingSystem = OperatingSystem.LINUX; //Hardcoded
+
     public static final Map<AuthenticationMethod, Authentication> authenticationList = new HashMap<>(){{
         put(AuthenticationMethod.PASSWORD, new PasswordAuthentication());
         put(AuthenticationMethod.TWO_FACTOR, new TwoFactorAuthentication());
         put(AuthenticationMethod.EMAIL, new EmailAuthentication());
     }};
+
     public static final Map<OperatingSystem, GUI> GUIList = new HashMap<>(){{
         put(OperatingSystem.WINDOWS, new windowsGUI());
         put(OperatingSystem.LINUX, new linuxGUI());
