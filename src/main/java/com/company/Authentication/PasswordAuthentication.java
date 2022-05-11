@@ -1,12 +1,17 @@
 package com.company.Authentication;
 
+//Imports
+import com.company.AccountManagers.User;
+
 /*
 This is one of the multiple authentication methods.
 It simply compares the given password with the given user password.
 
     Public methods:
         loginAttempt
-            Description: Attempts to log-in
+            Description:
+                Attempts to log-in
+
             Arguments:
                 user : User -> User that you're attempting to log into
                 userInput : String -> User input for logging in into the account
@@ -14,8 +19,6 @@ It simply compares the given password with the given user password.
             Returns:
                 Boolean -> If the user succeed on passing the login attempt
 */
-
-import com.company.AccountManagers.User;
 
 public class PasswordAuthentication implements Authentication {
     public boolean loginAttempt(User user, String userInput) {

@@ -1,5 +1,6 @@
 package com.company.GUIcontainers;
 
+//Imports
 import com.company.AccountManagers.Profile;
 import com.company.AccountManagers.User;
 import com.company.GUIs.Linux.LinuxAccountDetails;
@@ -11,6 +12,11 @@ import com.company.Utiliity.Event;
 import com.company.Utiliity.EventManager;
 import com.company.enums.AuthenticationMethod;
 import com.company.enums.Privilege;
+
+/*
+This class implements the GUI used by the pseudo-linux operating system.
+It's a color variation of the windows GUI
+*/
 
 public class linuxGUI extends GUI {
     @Override

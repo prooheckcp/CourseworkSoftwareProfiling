@@ -1,4 +1,8 @@
 package com.company.Utiliity;
+
+//Imports
+import javax.swing.*;
+
 /*
 This class implements some utility methods that
 are essentially wrappers to already existing java
@@ -6,32 +10,44 @@ methods.
 
     Static Methods:
         getLine
-            Description: Gets the next line of input given by the user.
+            Description:
+                Pops up a dialog box asking for user input and returns the user input.
+
+            Arguments:
+                message : String -> The message that you want to display to the user in the dialog box.
 
             Returns:
-                String -> Next line of input from the user
+                String -> User input
 
-        retryPrompt
-            Description: Asks if the user wants to retry or go back.
-            Pressing 1 will make it return true, everything else will make it false.
+        warning
+            Description:
+                Alerts a user with a given message. Similar to Javascript's alert()
 
-            Returns:
-                Boolean -> If the user pressed 1 or not
+            Arguments:
+                message : String -> The message to display on the alert
+
+        responseTuple
+            Description:
+                This behaves as a wrapper for the usual Tuple<Boolean, String>. Since I usually return a tupple with the success status and errorMessage as a way to manage checks this allows us to create responses with a smaller syntax.
+
+            Arguments:
+                Boolean -> If the action succeed or not
+                String (optional) -> Error message to give context in case it fails
 
         printInLine
-            Description: Wrapper function for System.out.print
+            Description:
+                Wrapper function for System.out.print
 
             Arguments:
                 String message
 
          print
-            Description: Wrapper function for System.out.println
+            Description:
+                Wrapper function for System.out.println
 
             Arguments:
                 String message
 */
-
-import javax.swing.*;
 
 public class Util {
 

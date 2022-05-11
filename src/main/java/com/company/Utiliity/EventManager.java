@@ -1,11 +1,28 @@
 package com.company.Utiliity;
 
+//Imports
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
 
 /*
-Simple class to implement custom events
+Simple class to implement custom events with the observer pattern
+
+    Public Static Methods:
+        addListener
+            Description:
+                Adds a callback correlated to a given String
+
+            Arguments:
+                name : String -> The name of the event that you wish to subscribe to
+                event : Event -> The callback method
+
+        fireEvent
+            Description:
+                Triggers all the callbacks with the given name
+
+            Arguments:
+                name : String -> The name of the event that you wish to create
 */
 
 public class EventManager<CustomType> {

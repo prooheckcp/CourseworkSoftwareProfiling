@@ -1,9 +1,8 @@
 package com.company.Authentication;
 
+//Imports
 import com.company.AccountManagers.User;
 import com.company.Utiliity.Util;
-
-import javax.swing.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
@@ -15,7 +14,9 @@ Requiring the user to input three letters.
 
     Public methods:
         loginAttempt
-            Description: Attempts to log-in
+            Description:
+                Attempts to log-in
+
             Arguments:
                 _a : User -> Does not require this argument, can pass null
                 _b : String -> Does not require this argument, can pass null
@@ -25,12 +26,15 @@ Requiring the user to input three letters.
 
     Private methods:
         sendCode
-            Description: Writes the code into a txt file
+            Description:
+                Writes the code into a txt file
+
             Arguments:
                 code : String -> The code that you want to be written in the txt file
 
         randomChar
-            Description: Generates a random letter (A-Z)
+            Description:
+                Generates a random letter (A-Z)
 
             Returns:
                 char -> Returns letter (A-Z)
@@ -38,8 +42,12 @@ Requiring the user to input three letters.
 
 public class EmailAuthentication implements Authentication {
     //Constants
-    private String WARNING_MESSAGE = "A code has been sent to your email! Insert it below";
+    private final String WARNING_MESSAGE = "A code has been sent to your email! Insert it below";
+    private final String FILE_NAME = "EmailCode.txt";
+    private final int FIRST_ASCII_VALUE = 65;
+    private final int FINAL_ASCII_VALUE = 91;
 
+    //Methods
     public boolean loginAttempt(User _a, String _b) {
         //Generate a 3 letter sequence
         String generatedCode = "" + randomChar() + randomChar() + randomChar();
@@ -52,10 +60,9 @@ public class EmailAuthentication implements Authentication {
         return correctCode;
     }
 
-    //Sends the code to a txt file
     private void sendCode(String code){
         try{
-            FileWriter myWriter = new FileWriter("EmailCode.txt");
+            FileWriter myWriter = new FileWriter(FILE_NAME);
             myWriter.write("Your code: " + code);
             myWriter.close();
         }catch (IOException e) {
@@ -66,6 +73,6 @@ public class EmailAuthentication implements Authentication {
 
     private char randomChar(){
         Random rand = new Random();
-        return (char)rand.nextInt(65, 91);
+        return (char)rand.nextInt(FIRST_ASCII_VALUE, FINAL_ASCII_VALUE);
     }
 }
