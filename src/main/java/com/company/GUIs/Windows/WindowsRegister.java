@@ -17,6 +17,7 @@ This class manages the register anel (front-end)
             Returns:
                 JPanel -> The main container
 */
+
 public class WindowsRegister {
     private JPanel mainContainer;
     private JLabel RegisterTitle;

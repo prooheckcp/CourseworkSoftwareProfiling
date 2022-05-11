@@ -1,10 +1,22 @@
 package com.company.GUIs.Linux;
 
+//Imports
 import com.company.GUIcontainers.GUI;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+/*
+This class manages the log-in panel (front-end)
+
+    Public methods:
+        getMainContainer
+            Description:
+                Returns the main panel container of this Window
+
+            Returns:
+                JPanel -> The main container
+*/
 
 public class LinuxLogin {
     private JPanel mainContainer;

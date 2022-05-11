@@ -38,6 +38,7 @@ This is a template for Windows options panels
             Returns:
                 JPanel -> The main container
 */
+
 public class WindowsOptions {
     private JPanel mainContainer;
     private JLabel mainTitle;

@@ -1,16 +1,42 @@
 package com.company.GUIs.Linux;
 
-/*
-This is a template for Windows options panels
-*/
-
+//Imports
 import com.company.Utiliity.MenuAction;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
+
+/*
+This is a template for Linux options panels
+    Private methods:
+        generateButton
+            Description:
+                Creates a new button inside of the button container panel
+
+            Arguments:
+                menuAction : MenuAction -> The callback that will be called when the button is pressed
+
+        createUIComponents
+            Description:
+                Default function from the Swinger library. It's used to manage custom created components by code
+
+    Public methods:
+        setDescription
+            Description:
+                Updates the description of the options window. Useful to change the text in run-time context.
+
+            Arguments:
+                newDescription : String -> The new description to be displayed in the label
+
+        getMainContainer
+            Description:
+                Returns the main panel container of this Window
+
+            Returns:
+                JPanel -> The main container
+*/
 
 public class LinuxOptions {
     private JPanel mainContainer;
