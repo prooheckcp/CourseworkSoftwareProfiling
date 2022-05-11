@@ -1,12 +1,15 @@
 package com.company.UnitTesting.GUIcontainers;
 
+//Imports
+import com.company.AccountManagers.User;
 import com.company.GUIcontainers.linuxGUI;
 import com.company.GUIcontainers.windowsGUI;
+import com.company.Utiliity.Data;
+import com.company.Utiliity.Tuple;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import javax.swing.*;
 
 public class GUITest {
@@ -50,5 +53,21 @@ public class GUITest {
         Assertions.assertEquals(Linux.getAuthenticationPanel(), panel);
         Linux.setAccountDetailsPanel(panel);
         Assertions.assertEquals(Linux.getAccountDetailsPanel(), panel);
+    }
+
+    @DisplayName("Testing register attempt")
+    @Test
+    void testRegister(){
+        Windows.registerAttempt("someUser", "somePass");
+        Tuple<Boolean, User> response = Data.getUser("someUser");
+        Assertions.assertEquals(response.getValue1(), true);
+        Assertions.assertEquals(Windows.getCurrentPanel(), Windows.getProfilePanel());
+    }
+
+    @DisplayName("Testing login attempt")
+    @Test
+    void testLogin(){
+        Windows.loginAttempt("prooheckcp", "password");
+        Assertions.assertEquals(Windows.getCurrentPanel(), Windows.getProfilePanel());
     }
 }

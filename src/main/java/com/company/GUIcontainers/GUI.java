@@ -27,7 +27,11 @@ with whatever panels you want.
             Description:
                 Setups the events related to the choices in the authentication method window.
 
-    Protected methods:
+    Public methods:
+        getCurrentPanel
+            Returns:
+                JPanel -> The current panel being used by the application
+
         getMainPanel
             Returns:
                 JPanel -> The main panel of the application (First window)
@@ -105,7 +109,6 @@ with whatever panels you want.
             Description:
                 Setups all the events related to the main, profile and authentication windows. Used to feed information to the options classes.
 
-    Public methods:
         goToMainWindow
             Description:
                 Wrapper function to replace the current panel with the main window
@@ -150,6 +153,7 @@ public class GUI {
     //Variables
     private JFrame applicationFrame;
 
+    private JPanel _currentPanel;
     private JPanel _mainPanel;
     private JPanel _registerPanel;
     private JPanel _loginPanel;
@@ -163,6 +167,8 @@ public class GUI {
     public Vector<MenuAction> authenticationWindowActions = new Vector<MenuAction>();
 
     //Getters
+    public JPanel getCurrentPanel(){return _currentPanel;}
+
     public JPanel getMainPanel(){
         return _mainPanel;
     };
@@ -217,6 +223,7 @@ public class GUI {
         if(newPanel == null)
             return;
 
+        _currentPanel = newPanel;
         applicationFrame.getContentPane().removeAll(); //Clear current panel
         applicationFrame.add(newPanel);
         applicationFrame.revalidate();
@@ -338,6 +345,7 @@ public class GUI {
             return;
         }
 
+        _currentPanel = _mainPanel;
         applicationFrame = new JFrame();
         applicationFrame.setMinimumSize(MINIMUM_DIMENSION);
         applicationFrame.add(this._mainPanel, BorderLayout.CENTER);
