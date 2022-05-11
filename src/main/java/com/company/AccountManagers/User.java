@@ -28,7 +28,7 @@ about the users within the pseudo-database
                 A getter for the user username
 
             Returns:
-                Privilege -> User privilege
+                String -> username
 
         getPassword
             Description:
