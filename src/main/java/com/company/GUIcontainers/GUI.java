@@ -163,52 +163,52 @@ public class GUI {
     public Vector<MenuAction> authenticationWindowActions = new Vector<MenuAction>();
 
     //Getters
-    protected JPanel getMainPanel(){
+    public JPanel getMainPanel(){
         return _mainPanel;
     };
 
-    protected JPanel getRegisterPanel(){
+    public JPanel getRegisterPanel(){
         return _registerPanel;
     }
 
-    protected JPanel getLoginPanel(){
+    public JPanel getLoginPanel(){
         return _loginPanel;
     }
 
-    protected JPanel getProfilePanel(){
+    public JPanel getProfilePanel(){
         return _profilePanel;
     }
 
-    protected JPanel getAuthenticationPanel(){
+    public JPanel getAuthenticationPanel(){
         return _authenticationPanel;
     }
 
-    protected JPanel getAccountDetailsPanel(){
+    public JPanel getAccountDetailsPanel(){
         return _accountDetailsPanel;
     }
 
     //Setters
-    protected void setMainPanel(JPanel panel){
+    public void setMainPanel(JPanel panel){
         _mainPanel = panel;
     }
 
-    protected void setRegisterPanel(JPanel panel){
+    public void setRegisterPanel(JPanel panel){
         _registerPanel = panel;
     }
 
-    protected void setLoginPanel(JPanel panel){
+    public void setLoginPanel(JPanel panel){
         _loginPanel = panel;
     }
 
-    protected void setProfilePanel(JPanel panel){
+    public void setProfilePanel(JPanel panel){
         _profilePanel = panel;
     }
 
-    protected void setAuthenticationPanel(JPanel panel){
+    public void setAuthenticationPanel(JPanel panel){
         _authenticationPanel = panel;
     }
 
-    protected void setAccountDetailsPanel(JPanel panel){
+    public void setAccountDetailsPanel(JPanel panel){
         _accountDetailsPanel = panel;
     }
 
