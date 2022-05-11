@@ -9,6 +9,10 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+/*
+This testing file tests the methods provided by the Profile class
+*/
+
 public class ProfileTest {
 
     static private final int MINIMUM_USERNAME_LENGTH = 3;

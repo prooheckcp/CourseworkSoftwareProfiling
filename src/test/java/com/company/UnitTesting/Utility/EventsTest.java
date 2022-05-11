@@ -5,6 +5,10 @@ import com.company.Utiliity.Event;
 import com.company.Utiliity.EventManager;
 import org.junit.jupiter.api.*;
 
+/*
+This testing file tests the methods provided by the EventManager and Event classes
+*/
+
 public class EventsTest {
     //Constants
     static private final String EVENT_ONE = "EventOne";

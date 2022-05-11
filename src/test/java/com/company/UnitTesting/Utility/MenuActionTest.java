@@ -7,6 +7,10 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+/*
+This testing file tests the methods provided by the MenuAction class
+*/
+
 public class MenuActionTest {
     //Constants
     private static final String ACTION_NAME = "SomeName";

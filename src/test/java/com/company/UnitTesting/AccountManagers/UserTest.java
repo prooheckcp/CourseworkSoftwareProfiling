@@ -6,6 +6,10 @@ import com.company.enums.AuthenticationMethod;
 import com.company.enums.Privilege;
 import org.junit.jupiter.api.*;
 
+/*
+This testing file tests the methods provided by the user class
+*/
+
 public class UserTest {
     //Constants
     static final private Privilege PSEUDO_PRIVILEGE = Privilege.GUEST;

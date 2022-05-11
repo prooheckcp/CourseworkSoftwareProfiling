@@ -9,6 +9,10 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+/*
+This testing file tests the methods provided by the EmailAuthentication, PasswordAuthentication and TwoFactorAuthentication class
+*/
+
 public class AuthenticationTest {
     static User user;
     static EmailAuthentication emailAuthentication;

@@ -12,6 +12,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import javax.swing.*;
 
+/*
+This testing file tests the methods provided by the GUI, linuxGUI and windowsGUI class
+*/
+
 public class GUITest {
     private static linuxGUI Linux;
     private static windowsGUI Windows;

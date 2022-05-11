@@ -9,6 +9,10 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+/*
+This testing file tests the methods provided by the data class
+*/
+
 public class DataTest {
     @DisplayName("Testing getUser")
     @ParameterizedTest
