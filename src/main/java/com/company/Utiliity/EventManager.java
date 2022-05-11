@@ -26,7 +26,7 @@ Simple class to implement custom events with the observer pattern
 */
 
 public class EventManager<CustomType> {
-    public static Map<String, Vector<Event>> listenerList = new HashMap<>();
+    private static Map<String, Vector<Event>> listenerList = new HashMap<>();
 
     public static void addListener(String name, Event event){
         if(!listenerList.containsKey(name))

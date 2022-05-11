@@ -158,9 +158,9 @@ public class GUI {
     private JPanel _accountDetailsPanel;
 
     //Store actions
-    Vector<MenuAction> mainWindowActions = new Vector<MenuAction>();
-    Vector<MenuAction> profileWindowActions = new Vector<MenuAction>();
-    Vector<MenuAction> authenticationWindowActions = new Vector<MenuAction>();
+    public Vector<MenuAction> mainWindowActions = new Vector<MenuAction>();
+    public Vector<MenuAction> profileWindowActions = new Vector<MenuAction>();
+    public Vector<MenuAction> authenticationWindowActions = new Vector<MenuAction>();
 
     //Getters
     protected JPanel getMainPanel(){
