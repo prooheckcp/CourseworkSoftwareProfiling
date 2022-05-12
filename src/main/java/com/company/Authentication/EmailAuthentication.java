@@ -2,7 +2,7 @@ package com.company.Authentication;
 
 //Imports
 import com.company.AccountManagers.User;
-import com.company.Utiliity.Util;
+import com.company.Utility.Util;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;

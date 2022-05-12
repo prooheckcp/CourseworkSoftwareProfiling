@@ -7,9 +7,9 @@ import com.company.GUIs.Windows.WindowsAccountDetails;
 import com.company.GUIs.Windows.WindowsLogin;
 import com.company.GUIs.Windows.WindowsOptions;
 import com.company.GUIs.Windows.WindowsRegister;
-import com.company.Utiliity.Data;
-import com.company.Utiliity.Event;
-import com.company.Utiliity.EventManager;
+import com.company.Utility.Data;
+import com.company.Utility.Event;
+import com.company.Utility.EventManager;
 import com.company.enums.AuthenticationMethod;
 import com.company.enums.Privilege;
 
