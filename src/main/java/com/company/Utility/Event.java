@@ -1,4 +1,4 @@
-package com.company.Utiliity;
+package com.company.Utility;
 
 /*
 A simple class to help us with the observer pattern.

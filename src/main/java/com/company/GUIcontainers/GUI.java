@@ -3,7 +3,7 @@ package com.company.GUIcontainers;
 //Imports
 import com.company.AccountManagers.Profile;
 import com.company.Authentication.Authentication;
-import com.company.Utiliity.*;
+import com.company.Utility.*;
 import com.company.enums.AuthenticationMethod;
 import javax.swing.*;
 import java.awt.*;

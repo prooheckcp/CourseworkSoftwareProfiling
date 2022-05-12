@@ -1,4 +1,4 @@
-package com.company.Utiliity;
+package com.company.Utility;
 
 /*
 This is an abstract class used to implement

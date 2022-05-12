@@ -1,8 +1,6 @@
 package com.company.Utility;
 
 //Imports
-import com.company.Utiliity.Tuple;
-import com.company.Utiliity.Util;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -13,6 +11,7 @@ This testing file tests the methods provided by the util class
 
 public class UtilTest {
 
+    /*
     @DisplayName("Testing user input")
     @Test
     void getLine(){
@@ -26,6 +25,8 @@ public class UtilTest {
     void testWarnings(String warningMessage){
         Util.warning(warningMessage);
     }
+    */
+
 
     @DisplayName("Test response tuples")
     @Test

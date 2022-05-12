@@ -2,10 +2,8 @@ package com.company.GUIcontainers;
 
 //Imports
 import com.company.AccountManagers.User;
-import com.company.GUIcontainers.linuxGUI;
-import com.company.GUIcontainers.windowsGUI;
-import com.company.Utiliity.Data;
-import com.company.Utiliity.Tuple;
+import com.company.Utility.Data;
+import com.company.Utility.Tuple;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;

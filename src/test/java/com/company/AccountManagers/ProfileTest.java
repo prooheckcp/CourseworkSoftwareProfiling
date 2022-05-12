@@ -1,10 +1,8 @@
 package com.company.AccountManagers;
 
 //Imports
-import com.company.AccountManagers.Profile;
-import com.company.AccountManagers.User;
-import com.company.Utiliity.Data;
-import com.company.Utiliity.Tuple;
+import com.company.Utility.Data;
+import com.company.Utility.Tuple;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

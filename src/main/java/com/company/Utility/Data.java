@@ -1,4 +1,4 @@
-package com.company.Utiliity;
+package com.company.Utility;
 
 //Imports
 import com.company.Authentication.Authentication;

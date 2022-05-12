@@ -2,9 +2,9 @@ package com.company.AccountManagers;
 
 //Imports
 import com.company.Authentication.Authentication;
-import com.company.Utiliity.Data;
-import com.company.Utiliity.Tuple;
-import com.company.Utiliity.Util;
+import com.company.Utility.Data;
+import com.company.Utility.Tuple;
+import com.company.Utility.Util;
 import com.company.enums.AuthenticationMethod;
 
 /*

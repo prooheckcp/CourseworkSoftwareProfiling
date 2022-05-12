@@ -1,7 +1,7 @@
 package com.company.GUIs.Linux;
 
 //Imports
-import com.company.Utiliity.MenuAction;
+import com.company.Utility.MenuAction;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

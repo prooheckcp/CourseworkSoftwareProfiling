@@ -1,8 +1,6 @@
 package com.company.Utility;
 
 //Imports
-import com.company.Utiliity.Event;
-import com.company.Utiliity.EventManager;
 import org.junit.jupiter.api.*;
 
 /*

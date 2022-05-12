@@ -27,6 +27,7 @@ public class AuthenticationTest {
         twoFactorAuthentication = new TwoFactorAuthentication();
     }
 
+    /*
     @DisplayName("Attempt to log in with phone sms")
     @Test
     void attempt2FA(){
@@ -42,6 +43,7 @@ public class AuthenticationTest {
 
         Assertions.assertEquals(success, false);
     }
+    */
 
     @DisplayName("Attempting to log in with multiple passwords")
     @ParameterizedTest

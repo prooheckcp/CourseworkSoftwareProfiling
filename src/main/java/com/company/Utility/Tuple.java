@@ -1,4 +1,4 @@
-package com.company.Utiliity;
+package com.company.Utility;
 
 /*
 Implements a simple 2 dimensional tuple
