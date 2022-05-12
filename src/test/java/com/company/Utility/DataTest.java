@@ -24,6 +24,8 @@ public class DataTest {
             Assertions.assertNotNull(user);
         else
             Assertions.assertNull(user);
+
+
     }
 
     @DisplayName("Testing createUser")
