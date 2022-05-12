@@ -1,4 +1,4 @@
-package com.company.UnitTesting.Utility;
+package com.company.Utility;
 
 //Imports
 import com.company.Utiliity.Tuple;

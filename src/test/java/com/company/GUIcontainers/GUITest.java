@@ -1,4 +1,4 @@
-package com.company.UnitTesting.GUIcontainers;
+package com.company.GUIcontainers;
 
 //Imports
 import com.company.AccountManagers.User;

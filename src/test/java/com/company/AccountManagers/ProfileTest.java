@@ -1,4 +1,4 @@
-package com.company.UnitTesting.AccountManagers;
+package com.company.AccountManagers;
 
 //Imports
 import com.company.AccountManagers.Profile;

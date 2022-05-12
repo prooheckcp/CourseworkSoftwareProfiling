@@ -1,4 +1,4 @@
-package com.company.UnitTesting.Authentication;
+package com.company.Authentication;
 
 //Imports
 import com.company.AccountManagers.User;
