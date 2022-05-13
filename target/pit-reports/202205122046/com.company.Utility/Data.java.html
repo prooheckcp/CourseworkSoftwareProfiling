@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Data.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.company.Utility;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>//Imports</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.Authentication.Authentication;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.Authentication.EmailAuthentication;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.Authentication.PasswordAuthentication;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.Authentication.TwoFactorAuthentication;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.GUIcontainers.GUI;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.GUIcontainers.linuxGUI;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.GUIcontainers.windowsGUI;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.AccountManagers.User;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.enums.AuthenticationMethod;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.enums.OperatingSystem;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.company.enums.Privilege;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.HashMap;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Map;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Vector;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>/*</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>Since we won&#39;t be using any sort of databases</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>or storing files we&#39;ll instead use this place</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>to save data related to the program and other static data</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>such as option lists</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    Static methods:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        getUser</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            Description:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                This method is used to find a user by his username and retrieve it.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            Arguments:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                username : String -&#62; The username of the user you want to find</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            Returns:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                Tuple&#60;Boolean, User&#62; -&#62; A tuple where the first argument is true if it</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                                        found the user and the second argument is the user.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        createUser</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            Description:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                Creates a new user into the pseudo database.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            Arguments:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                username : String -&#62; Username for the new user</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                password : String -&#62; The password for the new account</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            Returns:</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                User -&#62; A reference to the user that was created into the database</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>*/</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class Data {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    //Events names</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static String PROFILE_UPDATE = &#34;profileUpdateEvent&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static String LOGGED_IN = &#34;loggedInEvent&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static final OperatingSystem currentOperatingSystem = OperatingSystem.LINUX; //Hardcoded</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static final Map&#60;AuthenticationMethod, Authentication&#62; authenticationList = new HashMap&#60;&#62;(){{</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_58'/>
+58
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_58'>3</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Authentication/PasswordAuthentication::&#60;init&#62; &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : removed call to com/company/Utility/Data$1::put &rarr; SURVIVED<br/>
+
+3. &#60;init&#62; : replaced call to com/company/Utility/Data$1::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(AuthenticationMethod.PASSWORD, new PasswordAuthentication());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_59'/>
+59
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_59'>3</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Authentication/TwoFactorAuthentication::&#60;init&#62; &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : removed call to com/company/Utility/Data$1::put &rarr; SURVIVED<br/>
+
+3. &#60;init&#62; : replaced call to com/company/Utility/Data$1::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(AuthenticationMethod.TWO_FACTOR, new TwoFactorAuthentication());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_60'/>
+60
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_60'>3</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Authentication/EmailAuthentication::&#60;init&#62; &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : removed call to com/company/Utility/Data$1::put &rarr; SURVIVED<br/>
+
+3. &#60;init&#62; : replaced call to com/company/Utility/Data$1::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(AuthenticationMethod.EMAIL, new EmailAuthentication());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static final Map&#60;OperatingSystem, GUI&#62; GUIList = new HashMap&#60;&#62;(){{</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_64'/>
+64
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_64'>3</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/GUIcontainers/windowsGUI::&#60;init&#62; &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : removed call to com/company/Utility/Data$2::put &rarr; SURVIVED<br/>
+
+3. &#60;init&#62; : replaced call to com/company/Utility/Data$2::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(OperatingSystem.WINDOWS, new windowsGUI());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_65'/>
+65
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_65'>3</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/GUIcontainers/linuxGUI::&#60;init&#62; &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : removed call to com/company/Utility/Data$2::put &rarr; SURVIVED<br/>
+
+3. &#60;init&#62; : replaced call to com/company/Utility/Data$2::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(OperatingSystem.LINUX, new linuxGUI());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static Map&#60;Privilege, String&#62; privilegeStrings = new HashMap&#60;&#62;(){{</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_69'/>
+69
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_69'>2</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Utility/Data$3::put &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : replaced call to com/company/Utility/Data$3::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(Privilege.GUEST, &#34;Guest&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_70'/>
+70
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_70'>2</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Utility/Data$3::put &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : replaced call to com/company/Utility/Data$3::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(Privilege.ADMIN, &#34;Admin&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static Map&#60;AuthenticationMethod, String&#62; authenticationStrings = new HashMap&#60;&#62;(){{</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_74'/>
+74
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_74'>2</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Utility/Data$4::put &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : replaced call to com/company/Utility/Data$4::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(AuthenticationMethod.NONE, &#34;None&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_75'/>
+75
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_75'>2</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Utility/Data$4::put &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : replaced call to com/company/Utility/Data$4::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(AuthenticationMethod.PASSWORD, &#34;Password&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_76'/>
+76
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_76'>2</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Utility/Data$4::put &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : replaced call to com/company/Utility/Data$4::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(AuthenticationMethod.TWO_FACTOR, &#34;2FA&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_77'/>
+77
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_77'>2</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/Utility/Data$4::put &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : replaced call to com/company/Utility/Data$4::put with argument &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        put(AuthenticationMethod.EMAIL, &#34;Email&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    //Random basic admin account for testing purposes</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private static Vector&#60;User&#62; userList = new Vector&#60;User&#62;(){{</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_82'/>
+82
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_82'>2</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/AccountManagers/User::&#60;init&#62; &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : removed call to com/company/Utility/Data$5::add &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        add(</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            new User(</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    &#34;prooheckcp&#34;,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    &#34;password&#34;,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    Privilege.ADMIN,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    AuthenticationMethod.NONE)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_88'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        );</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_90'/>
+90
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_90'>2</a>
+<span>
+
+1. &#60;init&#62; : removed call to com/company/AccountManagers/User::&#60;init&#62; &rarr; SURVIVED<br/>
+
+2. &#60;init&#62; : removed call to com/company/Utility/Data$5::add &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        add(</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            new User(</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    &#34;proohec&#34;,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    &#34;password&#34;,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    Privilege.ADMIN,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_95'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    AuthenticationMethod.EMAIL)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        );</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static Tuple&#60;Boolean, User&#62; getUser(String username){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_100'/>
+100
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_100'>21</a>
+<span>
+
+1. getUser : Substituted 0 with 1 &rarr; SURVIVED<br/>
+
+2. getUser : Substituted 0 with 1 &rarr; SURVIVED<br/>
+
+3. getUser : Substituted 0 with 1 &rarr; SURVIVED<br/>
+
+4. getUser : changed conditional boundary &rarr; KILLED<br/>
+
+5. getUser : Changed increment from 1 to -1 &rarr; KILLED<br/>
+
+6. getUser : negated conditional &rarr; KILLED<br/>
+
+7. getUser : removed call to java/util/Vector::size &rarr; KILLED<br/>
+
+8. getUser : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+9. getUser : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+
+10. getUser : Negated integer local variable number 1 &rarr; KILLED<br/>
+
+11. getUser : Substituted 0 with -1 &rarr; KILLED<br/>
+
+12. getUser : Substituted 0 with -1 &rarr; KILLED<br/>
+
+13. getUser : greater or equal to less than &rarr; KILLED<br/>
+
+14. getUser : greater or equal to less or equal &rarr; KILLED<br/>
+
+15. getUser : greater or equal to greater than &rarr; KILLED<br/>
+
+16. getUser : greater or equal to equal &rarr; KILLED<br/>
+
+17. getUser : greater or equal to not equal &rarr; KILLED<br/>
+
+18. getUser : Incremented (a++) integer local variable number 1 &rarr; KILLED<br/>
+
+19. getUser : Decremented (a--) integer local variable number 1 &rarr; KILLED<br/>
+
+20. getUser : Incremented (++a) integer local variable number 1 &rarr; KILLED<br/>
+
+21. getUser : Decremented (--a) integer local variable number 1 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        for(int index = 0; index &#60; userList.size(); index++){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_101'/>
+101
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_101'>6</a>
+<span>
+
+1. getUser : Incremented (a++) integer local variable number 1 &rarr; SURVIVED<br/>
+
+2. getUser : Decremented (a--) integer local variable number 1 &rarr; TIMED_OUT<br/>
+
+3. getUser : removed call to java/util/Vector::get &rarr; KILLED<br/>
+
+4. getUser : Negated integer local variable number 1 &rarr; KILLED<br/>
+
+5. getUser : Incremented (++a) integer local variable number 1 &rarr; KILLED<br/>
+
+6. getUser : Decremented (--a) integer local variable number 1 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            User user = userList.get(index);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_102'/>
+102
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_102'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_103'/>
+103
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_103'>12</a>
+<span>
+
+1. getUser : replaced call to java/lang/String::strip with receiver &rarr; SURVIVED<br/>
+
+2. getUser : equal to less or equal &rarr; SURVIVED<br/>
+
+3. getUser : negated conditional &rarr; KILLED<br/>
+
+4. getUser : removed call to com/company/AccountManagers/User::getUsername &rarr; KILLED<br/>
+
+5. getUser : removed call to java/lang/String::strip &rarr; KILLED<br/>
+
+6. getUser : removed call to java/lang/String::equals &rarr; KILLED<br/>
+
+7. getUser : removed conditional - replaced equality check with false &rarr; KILLED<br/>
+
+8. getUser : removed conditional - replaced equality check with true &rarr; KILLED<br/>
+
+9. getUser : equal to less than &rarr; KILLED<br/>
+
+10. getUser : equal to greater than &rarr; KILLED<br/>
+
+11. getUser : equal to greater or equal &rarr; KILLED<br/>
+
+12. getUser : equal to not equal &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if(user.getUsername().strip().equals(username))</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_104'/>
+104
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_104'>11</a>
+<span>
+
+1. getUser : Substituted 1 with -1 &rarr; SURVIVED<br/>
+
+2. getUser : Substituted 1 with -1 &rarr; SURVIVED<br/>
+
+3. getUser : Substituted 1 with 2 &rarr; SURVIVED<br/>
+
+4. getUser : removed call to com/company/Utility/Tuple::&#60;init&#62; &rarr; KILLED<br/>
+
+5. getUser : Substituted 1 with 0 &rarr; KILLED<br/>
+
+6. getUser : removed call to java/lang/Boolean::valueOf &rarr; KILLED<br/>
+
+7. getUser : mutated return of Object value for com/company/Utility/Data::getUser to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+8. getUser : replaced return of object reference value with [see docs for details] &rarr; KILLED<br/>
+
+9. getUser : replaced return value with null for com/company/Utility/Data::getUser &rarr; KILLED<br/>
+
+10. getUser : Substituted 1 with 0 &rarr; KILLED<br/>
+
+11. getUser : Substituted 1 with 0 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                return new Tuple(true, user);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_106'/>
+106
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_106'>10</a>
+<span>
+
+1. getUser : removed call to com/company/Utility/Tuple::&#60;init&#62; &rarr; KILLED<br/>
+
+2. getUser : Substituted 0 with 1 &rarr; KILLED<br/>
+
+3. getUser : removed call to java/lang/Boolean::valueOf &rarr; KILLED<br/>
+
+4. getUser : mutated return of Object value for com/company/Utility/Data::getUser to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+5. getUser : replaced return of object reference value with [see docs for details] &rarr; KILLED<br/>
+
+6. getUser : replaced return value with null for com/company/Utility/Data::getUser &rarr; KILLED<br/>
+
+7. getUser : Substituted 0 with 1 &rarr; KILLED<br/>
+
+8. getUser : Substituted 0 with -1 &rarr; KILLED<br/>
+
+9. getUser : Substituted 0 with 1 &rarr; KILLED<br/>
+
+10. getUser : Substituted 0 with -1 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return new Tuple(false, null);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static User createUser(String username, String password){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_110'/>
+110
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_110'>3</a>
+<span>
+
+1. createUser : removed call to com/company/AccountManagers/User::&#60;init&#62; &rarr; SURVIVED<br/>
+
+2. createUser : removed call to java/lang/String::strip &rarr; SURVIVED<br/>
+
+3. createUser : replaced call to java/lang/String::strip with receiver &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        User user = new User(username.strip(), password);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_111'/>
+111
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_111'>1</a>
+<span>
+
+1. createUser : removed call to java/util/Vector::add &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        userList.add(user);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_112'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_113'/>
+113
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_113'>3</a>
+<span>
+
+1. createUser : mutated return of Object value for com/company/Utility/Data::createUser to ( if (x != null) null else throw new RuntimeException ) &rarr; SURVIVED<br/>
+
+2. createUser : replaced return of object reference value with [see docs for details] &rarr; SURVIVED<br/>
+
+3. createUser : replaced return value with null for com/company/Utility/Data::createUser &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return user;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_114'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_115'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_58'>58</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_58'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Authentication/PasswordAuthentication::&#60;init&#62; &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$1::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$1::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_59'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Authentication/TwoFactorAuthentication::&#60;init&#62; &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$1::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$1::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_60'>60</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_60'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Authentication/EmailAuthentication::&#60;init&#62; &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$1::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$1::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_64'>64</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_64'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/GUIcontainers/windowsGUI::&#60;init&#62; &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$2::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$2::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_65'>65</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_65'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/GUIcontainers/linuxGUI::&#60;init&#62; &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$2::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$2::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_69'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$3::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$3::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_70'>70</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_70'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$3::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$3::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_74'>74</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_74'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$4::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$4::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_75'>75</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_75'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$4::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$4::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_76'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$4::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$4::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_77'>77</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_77'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$4::put &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> replaced call to com/company/Utility/Data$4::put with argument &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_82'>82</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_82'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/AccountManagers/User::&#60;init&#62; &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$5::add &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_90'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/AccountManagers/User::&#60;init&#62; &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/company/Utility/Data$5::add &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_100'>100</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_100'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> Changed increment from 1 to -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> removed call to java/util/Vector::size &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> Negated integer local variable number 1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Substituted 0 with -1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Substituted 0 with -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> greater or equal to less than &rarr; KILLED</p> <p class='KILLED'><span class='pop'>14.<span><b>14</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> greater or equal to less or equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>15.<span><b>15</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> greater or equal to greater than &rarr; KILLED</p> <p class='KILLED'><span class='pop'>16.<span><b>16</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> greater or equal to equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>17.<span><b>17</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> greater or equal to not equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>18.<span><b>18</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:registerAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> Incremented (a++) integer local variable number 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>19.<span><b>19</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Decremented (a--) integer local variable number 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>20.<span><b>20</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Incremented (++a) integer local variable number 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>21.<span><b>21</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Decremented (--a) integer local variable number 1 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_101'>101</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_101'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> removed call to java/util/Vector::get &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> Negated integer local variable number 1 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> Incremented (a++) integer local variable number 1 &rarr; SURVIVED</p> <p class='TIMED_OUT'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> Decremented (a--) integer local variable number 1 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:registerAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> Incremented (++a) integer local variable number 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Decremented (--a) integer local variable number 1 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_103'>103</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_103'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#2]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> removed call to com/company/AccountManagers/User::getUsername &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> removed call to java/lang/String::strip &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> removed call to java/lang/String::equals &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> removed conditional - replaced equality check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#2]</span></span> removed conditional - replaced equality check with true &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/String::strip with receiver &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#2]</span></span> equal to less than &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> equal to less or equal &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#2]</span></span> equal to greater than &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> equal to greater or equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#2]</span></span> equal to not equal &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_104'>104</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_104'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> removed call to com/company/Utility/Tuple::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> removed call to java/lang/Boolean::valueOf &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> mutated return of Object value for com/company/Utility/Data::getUser to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> replaced return of object reference value with [see docs for details] &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> replaced return value with null for com/company/Utility/Data::getUser &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> Substituted 1 with -1 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> Substituted 1 with -1 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>none</span></span> Substituted 1 with 2 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1]</span></span> Substituted 1 with 0 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_106'>106</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_106'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> removed call to com/company/Utility/Tuple::&#60;init&#62; &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> removed call to java/lang/Boolean::valueOf &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> mutated return of Object value for com/company/Utility/Data::getUser to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> replaced return of object reference value with [see docs for details] &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> replaced return value with null for com/company/Utility/Data::getUser &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> Substituted 0 with -1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> Substituted 0 with 1 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>getUser<br/><b>Killed by : </b>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2]</span></span> Substituted 0 with -1 &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_110'>110</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_110'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createUser<br/><b>Killed by : </b>none</span></span> removed call to com/company/AccountManagers/User::&#60;init&#62; &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>createUser<br/><b>Killed by : </b>none</span></span> removed call to java/lang/String::strip &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>createUser<br/><b>Killed by : </b>none</span></span> replaced call to java/lang/String::strip with receiver &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_111'>111</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_111'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createUser<br/><b>Killed by : </b>none</span></span> removed call to java/util/Vector::add &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@4f5c30b1_113'>113</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@4f5c30b1_113'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createUser<br/><b>Killed by : </b>none</span></span> mutated return of Object value for com/company/Utility/Data::createUser to ( if (x != null) null else throw new RuntimeException ) &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>createUser<br/><b>Killed by : </b>none</span></span> replaced return of object reference value with [see docs for details] &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>createUser<br/><b>Killed by : </b>none</span></span> replaced return value with null for com/company/Utility/Data::createUser &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>ABS</li>
+
+<li class='mutator'>AOD1</li>
+
+<li class='mutator'>AOD2</li>
+
+<li class='mutator'>AOR1</li>
+
+<li class='mutator'>AOR2</li>
+
+<li class='mutator'>AOR3</li>
+
+<li class='mutator'>AOR4</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>CONSTRUCTOR_CALLS</li>
+
+<li class='mutator'>CRCR1</li>
+
+<li class='mutator'>CRCR2</li>
+
+<li class='mutator'>CRCR3</li>
+
+<li class='mutator'>CRCR4</li>
+
+<li class='mutator'>CRCR5</li>
+
+<li class='mutator'>CRCR6</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>EXPERIMENTAL_ARGUMENT_PROPAGATION</li>
+
+<li class='mutator'>EXPERIMENTAL_BIG_DECIMAL</li>
+
+<li class='mutator'>EXPERIMENTAL_BIG_INTEGER</li>
+
+<li class='mutator'>EXPERIMENTAL_MEMBER_VARIABLE</li>
+
+<li class='mutator'>EXPERIMENTAL_NAKED_RECEIVER</li>
+
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_[0-99]</li>
+
+<li class='mutator'>EXPERIMENTAL_RETURN_VALUES_MUTATOR</li>
+
+<li class='mutator'>EXPERIMENTAL_SWITCH</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INLINE_CONSTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NON_VOID_METHOD_CALLS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>OBBN1</li>
+
+<li class='mutator'>OBBN2</li>
+
+<li class='mutator'>OBBN3</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_ELSE</li>
+
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_IF</li>
+
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_ELSE</li>
+
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_IF</li>
+
+<li class='mutator'>REMOVE_INCREMENTS</li>
+
+<li class='mutator'>RETURN_VALS</li>
+
+<li class='mutator'>ROR1</li>
+
+<li class='mutator'>ROR2</li>
+
+<li class='mutator'>ROR3</li>
+
+<li class='mutator'>ROR4</li>
+
+<li class='mutator'>ROR5</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>UOI1</li>
+
+<li class='mutator'>UOI2</li>
+
+<li class='mutator'>UOI3</li>
+
+<li class='mutator'>UOI4</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#1] (8 ms)</li><li>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#2] (13 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:strongerRegisterAttempt(java.lang.String, java.lang.String)]/[test-template-invocation:#4] (8 ms)</li><li>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:getUser(java.lang.String)]/[test-template-invocation:#1] (5 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:strongerRegisterAttempt(java.lang.String, java.lang.String)]/[test-template-invocation:#3] (8 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[method:regularLogin()] (14 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:strongerRegisterAttempt(java.lang.String, java.lang.String)]/[test-template-invocation:#2] (8 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:strongerRegisterAttempt(java.lang.String, java.lang.String)]/[test-template-invocation:#1] (9 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:strongerRegisterAttempt(java.lang.String, java.lang.String)]/[test-template-invocation:#8] (8 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#1] (12 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#2] (9 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:strongerRegisterAttempt(java.lang.String, java.lang.String)]/[test-template-invocation:#7] (8 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#3] (7 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:strongerRegisterAttempt(java.lang.String, java.lang.String)]/[test-template-invocation:#6] (10 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:strongerRegisterAttempt(java.lang.String, java.lang.String)]/[test-template-invocation:#5] (10 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:loginAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#4] (11 ms)</li><li>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#4] (9 ms)</li><li>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#2] (10 ms)</li><li>com.company.Utility.DataTest.[engine:junit-jupiter]/[class:com.company.Utility.DataTest]/[test-template:createUser(java.lang.String, java.lang.String)]/[test-template-invocation:#3] (9 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:registerAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#1] (7 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:registerAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#2] (8 ms)</li><li>com.company.AccountManagers.ProfileTest.[engine:junit-jupiter]/[class:com.company.AccountManagers.ProfileTest]/[test-template:registerAttemptTest(java.lang.String, java.lang.String)]/[test-template-invocation:#3] (6 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.7.4
+
+</body>
+</html>

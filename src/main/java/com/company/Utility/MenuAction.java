@@ -22,6 +22,10 @@ public class MenuAction {
     //Members
     public String actionName = "N/A";
 
+    public MenuAction(){
+
+    }
+
     public MenuAction(String actionName){
         this.actionName = actionName;
     }

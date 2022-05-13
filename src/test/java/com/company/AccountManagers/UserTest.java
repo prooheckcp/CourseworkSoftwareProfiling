@@ -21,6 +21,7 @@ public class UserTest {
 
     //Variables
     static private User testUser;
+    static private User testUser2;
 
     @BeforeAll
     static void setData(){
@@ -29,15 +30,38 @@ public class UserTest {
                 PSEUDO_PASSWORD,
                 PSEUDO_PRIVILEGE
         );
+
+        testUser2 = new User(
+                PSEUDO_USERNAME+"2",
+                PSEUDO_PASSWORD,
+                PSEUDO_PRIVILEGE,
+                PSEUDO_AUTHENTICATION_METHOD
+        );
     }
 
     @DisplayName("Assure setters and getters are working correctly")
     @Test
     void assertSetters(){
+        //Check testUser2 constructors
+        Assertions.assertEquals(testUser2.getUsername(), PSEUDO_USERNAME+"2");
+        Assertions.assertEquals(testUser2.getPassword(), PSEUDO_PASSWORD);
+        Assertions.assertEquals(testUser2.getPrivilege(), PSEUDO_PRIVILEGE);
+        Assertions.assertEquals(testUser2.getAuthenticationMethod(), PSEUDO_AUTHENTICATION_METHOD);
+        
+        //Check if the constructors worked
+        Assertions.assertEquals(testUser.getUsername(), PSEUDO_USERNAME);
+        Assertions.assertEquals(testUser.getPrivilege(), PSEUDO_PRIVILEGE);
+        Assertions.assertEquals(testUser.getAuthenticationMethod(), AuthenticationMethod.NONE);
+
         //Set the pseudo data
-        testUser.setEmail(PSEUDO_EMAIL);
-        testUser.setPhoneNumber(PSEUDO_PHONE_NUMBER);
-        testUser.setAuthenticationMethod(PSEUDO_AUTHENTICATION_METHOD);
+        Boolean successEmail = testUser.setEmail(PSEUDO_EMAIL);
+        Boolean successPhoneNumber = testUser.setPhoneNumber(PSEUDO_PHONE_NUMBER);
+        Boolean successAuthentication = testUser.setAuthenticationMethod(PSEUDO_AUTHENTICATION_METHOD);
+
+        //Assert changes succeeded
+        Assertions.assertEquals(successEmail, true);
+        Assertions.assertEquals(successPhoneNumber, true);
+        Assertions.assertEquals(successAuthentication, true);
 
         //Get the pseudo data
         Privilege userPrivilege = testUser.getPrivilege();

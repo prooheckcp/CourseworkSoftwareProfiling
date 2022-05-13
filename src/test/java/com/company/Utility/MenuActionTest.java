@@ -25,6 +25,9 @@ public class MenuActionTest {
     @DisplayName("Testing menu action")
     @Test
     void menuActionTesting(){
+        MenuAction menuAction = new MenuAction();
+        menuAction.Main();
+
         MenuAction newAction = new MenuAction(ACTION_NAME){
             @Override
             public void Main() {

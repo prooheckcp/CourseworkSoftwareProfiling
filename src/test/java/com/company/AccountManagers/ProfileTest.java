@@ -25,6 +25,38 @@ public class ProfileTest {
                 "someUser",
                 "somePassword"
         );
+
+    }
+
+    @DisplayName("Strong register attempt")
+    @ParameterizedTest
+    @CsvSource({
+            "ab, 1234",
+            "abc, 1234",
+            "qwertyuiopas, 1234",
+            "qwertyuiopasd, 1234",
+            "qwertyuisd, 123",
+            "dsgasgdas, 12",
+            "dsgasgdas, qwertyuiopas",
+            "fdsagsa, qwertyuiopasa"
+            })
+    void strongerRegisterAttempt(String username, String password){
+        int usernameLength = username.length();
+        int passwordLength = password.length();
+        Tuple<Boolean, User> userExists = Data.getUser(username); //Check if the user exists
+        Tuple<Boolean, String> registerResponse = Profile.registerAttempt(username, password);
+
+        if(
+            usernameLength < MINIMUM_USERNAME_LENGTH ||
+            usernameLength > MAXIMUM_USERNAME_LENGTH ||
+            passwordLength < MINIMUM_PASSWORD_LENGTH ||
+            passwordLength > MAXIMUM_PASSWORD_LENGTH ||
+            userExists.getValue1()
+        ){
+            Assertions.assertEquals(registerResponse.getValue1(), false);
+        }else{
+            Assertions.assertEquals(registerResponse.getValue1(), true);
+        }
     }
 
     @DisplayName("Testing login attempt")
